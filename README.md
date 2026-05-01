@@ -1,1 +1,1 @@
-#(SSD) Software Design Description
+# (SSD) Software Design Description
