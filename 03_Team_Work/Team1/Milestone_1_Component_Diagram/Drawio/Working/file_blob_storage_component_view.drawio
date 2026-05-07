@@ -1,0 +1,103 @@
+<mxfile host="Electron" agent="codex">
+  <diagram name="File Blob Storage Component View" id="file-blob-component-view">
+    <mxGraphModel dx="2169" dy="1317" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="canvas" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D1D1D1;strokeColor=#000000;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="930" width="1560" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="left_text" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;align=left;verticalAlign=top;fontSize=28;" value="&lt;b&gt;File/blob storage UML component diagram:&lt;/b&gt;&lt;br&gt;&lt;br&gt;The File / Blob Storage component stores uploaded resumes, profile images, and binary attachments.&lt;br&gt;&lt;br&gt;It serves retrieval requests to authorized services and publishes attachment events for notifications.&lt;br&gt;&lt;br&gt;This viewpoint focuses on File / Blob Storage and its direct interfaces." vertex="1">
+          <mxGeometry height="760" width="620" x="50" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="right_panel" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D1D1D1;strokeColor=#000000;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="820" width="800" x="740" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="server_box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#000000;strokeWidth=1.5;align=center;verticalAlign=top;spacingTop=8;fontSize=18;" value="&lt;b&gt;Data Storage Layer&lt;/b&gt;" vertex="1">
+          <mxGeometry height="740" width="330" x="780" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="s1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#000000;strokeWidth=1.5;fontSize=16;" value="Upload Gateway" vertex="1">
+          <mxGeometry height="90" width="210" x="840" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="s2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D9D9D9;strokeColor=#000000;strokeWidth=1.5;fontSize=16;" value="File / Blob Storage Core" vertex="1">
+          <mxGeometry height="90" width="210" x="840" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="s3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#000000;strokeWidth=1.5;fontSize=16;" value="Metadata Index" vertex="1">
+          <mxGeometry height="90" width="210" x="840" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="s4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#000000;strokeWidth=1.5;fontSize=16;" value="Event Publisher" vertex="1">
+          <mxGeometry height="90" width="210" x="840" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="c_server1" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=1.5;fillColor=#BABABA;" value="" vertex="1">
+          <mxGeometry height="16" width="16" x="937" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="c_server2" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=1.5;fillColor=#BABABA;" value="" vertex="1">
+          <mxGeometry height="16" width="16" x="937" y="435" as="geometry" />
+        </mxCell>
+        <mxCell id="c_server3" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=1.5;fillColor=#BABABA;" value="" vertex="1">
+          <mxGeometry height="16" width="16" x="937" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="e_server1" edge="1" parent="1" source="s1" style="endArrow=none;strokeWidth=1.5;strokeColor=#000000;html=1;" target="c_server1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_server2" edge="1" parent="1" source="c_server1" style="endArrow=none;strokeWidth=1.5;strokeColor=#000000;html=1;" target="s2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_server3" edge="1" parent="1" source="s2" style="endArrow=none;strokeWidth=1.5;strokeColor=#000000;html=1;" target="c_server2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_server4" edge="1" parent="1" source="c_server2" style="endArrow=none;strokeWidth=1.5;strokeColor=#000000;html=1;" target="s3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_server5" edge="1" parent="1" source="s3" style="endArrow=none;strokeWidth=1.5;strokeColor=#000000;html=1;" target="c_server3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_server6" edge="1" parent="1" source="c_server3" style="endArrow=none;strokeWidth=1.5;strokeColor=#000000;html=1;" target="s4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="client_box" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#000000;strokeWidth=1.5;align=center;verticalAlign=top;spacingTop=8;fontSize=18;" value="&lt;b&gt;Application Services&lt;/b&gt;" vertex="1">
+          <mxGeometry height="430" width="280" x="1210" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#000000;strokeWidth=1.5;fontSize=16;" value="Resume Service" vertex="1">
+          <mxGeometry height="90" width="180" x="1260" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#000000;strokeWidth=1.5;fontSize=16;" value="Profile Service" vertex="1">
+          <mxGeometry height="90" width="180" x="1260" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="client_mid" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=1.5;fillColor=#BABABA;" value="" vertex="1">
+          <mxGeometry height="16" width="16" x="1342" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="e_client1" edge="1" parent="1" source="c1" style="endArrow=none;strokeWidth=1.5;strokeColor=#000000;html=1;" target="client_mid">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_client2" edge="1" parent="1" source="client_mid" style="endArrow=none;strokeWidth=1.5;strokeColor=#000000;html=1;" target="c2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="port_left" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=1.5;fillColor=#FFFFFF;" value="port 20" vertex="1">
+          <mxGeometry height="30" width="30" x="1100" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="provided_ball" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=1.5;fillColor=#D9D9D9;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="1157.5" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="required_socket" parent="1" style="shape=mxgraph.basic.arc;startAngle=0.21858352090549943;endAngle=0.735714542894766;rounded=1;strokeWidth=1.5;snapToPoint=1;" value="" vertex="1">
+          <mxGeometry height="24" width="25" x="1155" y="296" as="geometry" />
+        </mxCell>
+        <mxCell id="port_right" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=1.5;fillColor=#FFFFFF;" value="port 21" vertex="1">
+          <mxGeometry height="35" width="35" x="1190" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_to_port_left" edge="1" parent="1" source="s2" style="endArrow=none;strokeWidth=1.5;strokeColor=#000000;html=1;" target="port_left">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_between_ports" edge="1" parent="1" source="port_left" style="endArrow=none;strokeWidth=1.5;strokeColor=#000000;html=1;" target="provided_ball">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_to_port_right" edge="1" parent="1" source="required_socket" style="endArrow=none;strokeWidth=1.5;strokeColor=#000000;html=1;" target="port_right">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_port_right_client" edge="1" parent="1" source="port_right" style="endArrow=none;strokeWidth=1.5;strokeColor=#000000;html=1;" target="c1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

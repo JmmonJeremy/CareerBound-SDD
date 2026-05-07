@@ -1,0 +1,79 @@
+<mxfile host="Electron" agent="codex">
+  <diagram name="File Blob Storage DFD" id="file-blob-dfd">
+    <mxGraphModel dx="1659" dy="1007" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D1D1D1;strokeColor=#000000;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="1000" width="1540" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;" value="&lt;b&gt;CareerBound File/Blob Storage - Data Flow Diagram&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="900" x="60" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="ext_student" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#000000;strokeWidth=1.5;" value="Student User" vertex="1">
+          <mxGeometry height="70" width="170" x="50" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="ext_company" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#000000;strokeWidth=1.5;" value="Company Representative" vertex="1">
+          <mxGeometry height="70" width="170" x="50" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="ext_notify" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#000000;strokeWidth=1.5;" value="Notification Service" vertex="1">
+          <mxGeometry height="70" width="200" x="1290" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="p1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#000000;strokeWidth=1.5;" value="1.0 Validate Upload Request" vertex="1">
+          <mxGeometry height="90" width="250" x="190" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="p2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#000000;strokeWidth=1.5;" value="2.0 Store Binary Object" vertex="1">
+          <mxGeometry height="90" width="250" x="610" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="p3" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#000000;strokeWidth=1.5;" value="3.0 Manage File Metadata" vertex="1">
+          <mxGeometry height="90" width="250" x="1110" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="p4" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#000000;strokeWidth=1.5;" value="4.0 Retrieve File / Resume Artifact" vertex="1">
+          <mxGeometry height="95" width="290" x="390" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="p5" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#000000;strokeWidth=1.5;" value="5.0 Publish Attachment Event" vertex="1">
+          <mxGeometry height="95" width="280" x="990" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="d1" parent="1" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;" value="D1 File Blob Store" vertex="1">
+          <mxGeometry height="80" width="190" x="550" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="d2" parent="1" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;" value="D2 File Metadata Index" vertex="1">
+          <mxGeometry height="80" width="210" x="870" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="f1" edge="1" parent="1" source="ext_student" style="endArrow=classic;html=1;strokeWidth=1.5;strokeColor=#000000;rounded=0;" target="p1" value="resume/profile file + metadata">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f2" edge="1" parent="1" source="p1" style="endArrow=classic;html=1;strokeWidth=1.5;strokeColor=#000000;rounded=0;" target="p2" value="validated upload request">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f3" edge="1" parent="1" source="p2" style="endArrow=classic;html=1;strokeWidth=1.5;strokeColor=#000000;rounded=0;" target="p3" value="object pointer + attributes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f4" edge="1" parent="1" source="p2" style="endArrow=classic;html=1;strokeWidth=1.5;strokeColor=#000000;rounded=0;" target="d1" value="binary file write">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f5" edge="1" parent="1" source="p3" style="endArrow=classic;html=1;strokeWidth=1.5;strokeColor=#000000;rounded=0;" target="d2" value="metadata write/update">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f6" edge="1" parent="1" source="ext_company" style="endArrow=classic;html=1;strokeWidth=1.5;strokeColor=#000000;rounded=0;" target="p4" value="file/resume retrieval request">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f7" edge="1" parent="1" source="p4" style="endArrow=classic;html=1;strokeWidth=1.5;strokeColor=#000000;rounded=0;" target="d2" value="metadata lookup">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f8" edge="1" parent="1" source="p4" style="endArrow=classic;html=1;strokeWidth=1.5;strokeColor=#000000;rounded=0;" target="d1" value="object read">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f9" edge="1" parent="1" source="p4" style="endArrow=classic;html=1;strokeWidth=1.5;strokeColor=#000000;rounded=0;" target="ext_company" value="resume artifact / profile image">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f10" edge="1" parent="1" source="p3" style="endArrow=classic;html=1;strokeWidth=1.5;strokeColor=#000000;rounded=0;" target="p5" value="upload success + attachment context">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f11" edge="1" parent="1" source="p5" style="endArrow=classic;html=1;strokeWidth=1.5;strokeColor=#000000;rounded=0;" target="ext_notify" value="notification payload reference">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
