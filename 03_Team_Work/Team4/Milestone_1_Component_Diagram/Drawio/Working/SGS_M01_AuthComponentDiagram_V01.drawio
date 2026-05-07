@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="phbDzcPIRWFyEIRLfKNQ">
-    <mxGraphModel dx="849" dy="913" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2020" dy="1061" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -135,6 +135,53 @@
         </mxCell>
         <mxCell id="1ARV2l2Duy1HlI0RssmZ-45" parent="1ARV2l2Duy1HlI0RssmZ-42" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1.5;fillStyle=solid;fillColor=#FFFFFF;" value="" vertex="1">
           <mxGeometry height="5.88957055214724" width="11.778531073446326" y="14.132024539877305" as="geometry" />
+        </mxCell>
+        <mxCell id="5mWkwckOPSo0CmEAIWWT-33" edge="1" parent="1" source="1ARV2l2Duy1HlI0RssmZ-2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=halfCircle;endFill=0;endSize=6;strokeWidth=1;sketch=0;fontSize=12;curved=1;exitX=0.571;exitY=0.593;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="270" y="480" as="sourcePoint" />
+            <mxPoint x="421" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5mWkwckOPSo0CmEAIWWT-34" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;aspect=fixed;fillColor=none;strokeColor=none;resizable=0;perimeter=centerPerimeter;rotatable=0;allowArrows=0;points=[];outlineConnect=1;" value="" vertex="1">
+          <mxGeometry height="10" width="10" x="260" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="5mWkwckOPSo0CmEAIWWT-35" parent="1" style="text;strokeColor=none;fillColor=none;html=1;fontSize=12;fontStyle=1;verticalAlign=middle;align=center;autosizeText=1;rotation=0;" value="requires API Auth Interface" vertex="1">
+          <mxGeometry height="40" width="160" x="430" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="5mWkwckOPSo0CmEAIWWT-38" edge="1" parent="1" source="1ARV2l2Duy1HlI0RssmZ-2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=halfCircle;endFill=0;endSize=6;strokeWidth=1;sketch=0;fontSize=12;curved=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="240" as="sourcePoint" />
+            <mxPoint x="390" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5mWkwckOPSo0CmEAIWWT-39" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;aspect=fixed;fillColor=none;strokeColor=none;resizable=0;perimeter=centerPerimeter;rotatable=0;allowArrows=0;points=[];outlineConnect=1;" value="" vertex="1">
+          <mxGeometry height="10" width="10" x="260" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="5mWkwckOPSo0CmEAIWWT-40" parent="1" style="text;strokeColor=none;fillColor=none;html=1;fontSize=11;fontStyle=1;verticalAlign=middle;align=center;autosizeText=1;" value="requires API Authorization Interface" vertex="1">
+          <mxGeometry height="40" width="180" x="220" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="5mWkwckOPSo0CmEAIWWT-44" edge="1" parent="1" source="1ARV2l2Duy1HlI0RssmZ-5" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=halfCircle;endFill=0;endSize=6;strokeWidth=1;sketch=0;fontSize=12;curved=1;exitX=0.571;exitY=0.593;exitDx=0;exitDy=0;exitPerimeter=0;" target="5mWkwckOPSo0CmEAIWWT-45" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="285" y="535" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5mWkwckOPSo0CmEAIWWT-45" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;aspect=fixed;fillColor=none;strokeColor=none;resizable=0;perimeter=centerPerimeter;rotatable=0;allowArrows=0;points=[];outlineConnect=1;" value="" vertex="1">
+          <mxGeometry height="10" width="10" x="364" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="5mWkwckOPSo0CmEAIWWT-49" parent="1" style="text;strokeColor=none;fillColor=none;html=1;fontSize=11;fontStyle=1;verticalAlign=middle;align=center;autosizeText=1;" value="requires Authorization Interface" vertex="1">
+          <mxGeometry height="40" width="160" x="454" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="5mWkwckOPSo0CmEAIWWT-50" edge="1" parent="1" source="n--Y3mDC4JvWWFTNY3TY-5" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=halfCircle;endFill=0;endSize=6;strokeWidth=1;sketch=0;fontSize=12;curved=1;exitX=0.54;exitY=1.13;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="285" y="685" as="sourcePoint" />
+            <mxPoint x="490" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5mWkwckOPSo0CmEAIWWT-51" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;aspect=fixed;fillColor=none;strokeColor=none;resizable=0;perimeter=centerPerimeter;rotatable=0;allowArrows=0;points=[];outlineConnect=1;" value="" vertex="1">
+          <mxGeometry height="10" width="10" x="260" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="5mWkwckOPSo0CmEAIWWT-52" parent="1" style="text;strokeColor=none;fillColor=none;html=1;fontSize=13;fontStyle=1;verticalAlign=middle;align=center;autosizeText=1;" value="requires Auth Interface" vertex="1">
+          <mxGeometry height="40" width="140" x="240" y="460" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
