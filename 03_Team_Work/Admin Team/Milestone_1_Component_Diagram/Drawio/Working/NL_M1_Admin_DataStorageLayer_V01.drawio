@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="F0QxqOnb7PiL8sqdAh83">
-    <mxGraphModel dx="994" dy="639" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1406" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,22 +8,6 @@
           <mxGeometry height="170" width="470" x="190" y="340" as="geometry" />
         </mxCell>
         <mxCell id="UyaXTx_Y78mbNfcbwDsM-7" parent="UyaXTx_Y78mbNfcbwDsM-6" style="shape=module;jettyWidth=8;jettyHeight=4;" value="" vertex="1">
-          <mxGeometry height="20" relative="1" width="20" x="1" as="geometry">
-            <mxPoint x="-27" y="7" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="UyaXTx_Y78mbNfcbwDsM-2" parent="1" style="html=1;dropTarget=0;whiteSpace=wrap;" value="Database" vertex="1">
-          <mxGeometry height="90" width="180" x="210" y="390" as="geometry" />
-        </mxCell>
-        <mxCell id="UyaXTx_Y78mbNfcbwDsM-3" parent="UyaXTx_Y78mbNfcbwDsM-2" style="shape=module;jettyWidth=8;jettyHeight=4;" value="" vertex="1">
-          <mxGeometry height="20" relative="1" width="20" x="1" as="geometry">
-            <mxPoint x="-27" y="7" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="UyaXTx_Y78mbNfcbwDsM-4" parent="1" style="html=1;dropTarget=0;whiteSpace=wrap;" value="File/Blob Storage" vertex="1">
-          <mxGeometry height="90" width="180" x="450" y="390" as="geometry" />
-        </mxCell>
-        <mxCell id="UyaXTx_Y78mbNfcbwDsM-5" parent="UyaXTx_Y78mbNfcbwDsM-4" style="shape=module;jettyWidth=8;jettyHeight=4;" value="" vertex="1">
           <mxGeometry height="20" relative="1" width="20" x="1" as="geometry">
             <mxPoint x="-27" y="7" as="offset" />
           </mxGeometry>
