@@ -88,6 +88,12 @@
         <mxCell id="FxNRL7uggNpci9tqDA-o-30" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;aspect=fixed;fillColor=none;strokeColor=none;resizable=0;perimeter=centerPerimeter;rotatable=0;allowArrows=0;points=[];outlineConnect=1;" value="" vertex="1">
           <mxGeometry height="10" width="10" x="440" y="270" as="geometry" />
         </mxCell>
+        <mxCell id="FxNRL7uggNpci9tqDA-o-32" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="IProfileManager" vertex="1">
+          <mxGeometry height="30" width="80" x="270" y="179" as="geometry" />
+        </mxCell>
+        <mxCell id="FxNRL7uggNpci9tqDA-o-34" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="IProfileAuditLogger" vertex="1">
+          <mxGeometry height="30" width="107" x="463" y="356" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
