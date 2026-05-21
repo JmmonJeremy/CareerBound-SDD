@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="7uifdoBtJzTQ7qPluXOg">
+    <mxGraphModel dx="1488" dy="828" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9u7044Uzg8fXDymmt_1G-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="910" width="490" x="180" as="geometry" />
+        </mxCell>
+        <mxCell id="9u7044Uzg8fXDymmt_1G-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fontFamily=Arial;strokeWidth=1.5;" value="Logo" vertex="1">
+          <mxGeometry height="60" width="220" x="270" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="9u7044Uzg8fXDymmt_1G-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fontFamily=Arial;strokeWidth=1.5;" value="Search Bar" vertex="1">
+          <mxGeometry height="60" width="220" x="270" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="9u7044Uzg8fXDymmt_1G-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fontFamily=Arial;strokeWidth=1.5;" value="&lt;div&gt;Drop Down&lt;/div&gt;&lt;div&gt;Menu&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="520" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="9u7044Uzg8fXDymmt_1G-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fontFamily=Arial;strokeColor=default;dashed=1;strokeWidth=1.5;" value="&lt;div&gt;Dashboard&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Profile&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Jobs&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Resume&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Notifications&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;News Feed&lt;/div&gt;" vertex="1">
+          <mxGeometry height="190" width="120" x="520" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="9u7044Uzg8fXDymmt_1G-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Arial;fontSize=14;strokeWidth=1.5;" value="Profile Picture" vertex="1">
+          <mxGeometry height="190" width="150" x="305" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="9u7044Uzg8fXDymmt_1G-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Arial;fontSize=14;align=left;strokeWidth=1.5;" value="&lt;div align=&quot;left&quot;&gt;Name:&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;Email:&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;Phone:&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;Bachelors Degree:&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;Skills:&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;Linkedin Profile&lt;/div&gt;" vertex="1">
+          <mxGeometry height="190" width="150" x="306" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="9u7044Uzg8fXDymmt_1G-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Arial;fontSize=14;align=center;strokeWidth=1.5;" value="Delete Profile" vertex="1">
+          <mxGeometry height="40" width="70" x="385" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="9u7044Uzg8fXDymmt_1G-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Arial;fontSize=14;align=center;strokeWidth=1.5;" value="&lt;div&gt;Edit Info&lt;/div&gt;&lt;div&gt;Save&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="60" x="306" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="9u7044Uzg8fXDymmt_1G-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fontFamily=Arial;strokeWidth=1.5;" value="Section Title" vertex="1">
+          <mxGeometry height="60" width="220" x="271" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="NwpxYMYnFPF8pkNeRDMT-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Arial;fontSize=14;strokeWidth=1.5;" value="About Me" vertex="1">
+          <mxGeometry height="120" width="150" x="306" y="700" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
