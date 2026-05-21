@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="7uifdoBtJzTQ7qPluXOg">
+    <mxGraphModel dx="1414" dy="787" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9u7044Uzg8fXDymmt_1G-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="590" width="850" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="9u7044Uzg8fXDymmt_1G-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="590" width="220" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="9u7044Uzg8fXDymmt_1G-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="60" width="850" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="9u7044Uzg8fXDymmt_1G-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fontFamily=Arial;strokeWidth=1.5;" value="Logo" vertex="1">
+          <mxGeometry height="60" width="220" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="9u7044Uzg8fXDymmt_1G-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fontFamily=Arial;strokeWidth=1.5;" value="Search Bar" vertex="1">
+          <mxGeometry height="60" width="270" x="340" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="9u7044Uzg8fXDymmt_1G-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fontFamily=Arial;strokeWidth=1.5;" value="Profile/Menu" vertex="1">
+          <mxGeometry height="60" width="120" x="730" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="9u7044Uzg8fXDymmt_1G-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fontFamily=Arial;strokeColor=none;strokeWidth=1.5;" value="&lt;div&gt;Dashboard&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Profile&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Jobs&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Resume&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Notifications&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;News Feed&lt;/div&gt;" vertex="1">
+          <mxGeometry height="430" width="120" x="50" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="9u7044Uzg8fXDymmt_1G-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Arial;fontSize=14;align=center;strokeWidth=1.5;" value="&lt;font&gt;Section Title&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="530" x="270" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="9u7044Uzg8fXDymmt_1G-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Arial;fontSize=14;strokeWidth=1.5;" value="Profile Picture" vertex="1">
+          <mxGeometry height="190" width="150" x="270" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="9u7044Uzg8fXDymmt_1G-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Arial;fontSize=14;align=left;strokeWidth=1.5;" value="&lt;div align=&quot;left&quot;&gt;Name:&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;Email:&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;Phone:&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;Bachelors Degree:&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;Skills:&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;Linkedin Profile&lt;/div&gt;" vertex="1">
+          <mxGeometry height="190" width="340" x="460" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="9u7044Uzg8fXDymmt_1G-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Arial;fontSize=14;align=center;strokeWidth=1.5;" value="Delete Profile" vertex="1">
+          <mxGeometry height="40" width="80" x="270" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="9u7044Uzg8fXDymmt_1G-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Arial;fontSize=14;align=center;strokeWidth=1.5;" value="&lt;div&gt;Edit Info&lt;/div&gt;&lt;div&gt;Save&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="80" x="270" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="R_omYNyoeEFS114XhhR_-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Arial;fontSize=14;strokeWidth=1.5;" value="About Me" vertex="1">
+          <mxGeometry height="70" width="530" x="270" y="470" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
