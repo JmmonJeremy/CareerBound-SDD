@@ -1,0 +1,90 @@
+<mxfile host="app.diagrams.net" modified="2026-05-30T00:00:00.000Z" agent="Codex" version="24.7.17" type="device">
+  <diagram id="sc-1-11-0-1" name="SC Figure 1.11.0.1 - filterCandidatesByRequirement()">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title-1" value="SC Figure 1.11.0.1 &amp;#8212; filterCandidatesByRequirement()" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontStyle=1;fontSize=14;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="234" y="40" width="700" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="parent-1" value="filterCandidatesByRequirement()" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#D9D9D9;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontStyle=1;fontSize=14;fontColor=#000000;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="434" y="120" width="300" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="child-1-1" value="receiveEmployerSearchQuery()" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#D9D9D9;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontStyle=1;fontSize=14;fontColor=#000000;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="44" y="330" width="215" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="child-1-2" value="validateCandidateFilters()" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#D9D9D9;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontStyle=1;fontSize=14;fontColor=#000000;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="284" y="330" width="215" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="child-1-3" value="applyCandidateFilters()" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#D9D9D9;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontStyle=1;fontSize=14;fontColor=#000000;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="524" y="330" width="215" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="child-1-4" value="retrieveMatchingResumes()" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#D9D9D9;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontStyle=1;fontSize=14;fontColor=#000000;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="764" y="330" width="215" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="child-1-5" value="returnFilteredCandidates()" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#D9D9D9;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontStyle=1;fontSize=14;fontColor=#000000;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="884" y="500" width="215" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-1-1" value="EmployerSearchQuery" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontStyle=1;fontSize=12;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="parent-1" target="child-1-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-1-2" value="CandidateFilter" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontStyle=1;fontSize=12;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="parent-1" target="child-1-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-1-3" value="CandidateFilter" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontStyle=1;fontSize=12;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="parent-1" target="child-1-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-1-4" value="ResumeIndex, StudentProfile" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontStyle=1;fontSize=12;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="parent-1" target="child-1-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-1-5" value="FilteredCandidateList" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontStyle=1;fontSize=12;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="parent-1" target="child-1-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="sc-1-11-0-2" name="SC Figure 1.11.0.2 - generateRecommendationList()">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title-2" value="SC Figure 1.11.0.2 &amp;#8212; generateRecommendationList()" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontStyle=1;fontSize=14;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="234" y="40" width="700" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="parent-2" value="generateRecommendationList()" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#D9D9D9;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontStyle=1;fontSize=14;fontColor=#000000;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="434" y="120" width="300" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="child-2-1" value="recommendCandidates()" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#D9D9D9;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontStyle=1;fontSize=14;fontColor=#000000;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="44" y="330" width="215" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="child-2-2" value="calculateCandidateScore()" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#D9D9D9;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontStyle=1;fontSize=14;fontColor=#000000;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="284" y="330" width="215" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="child-2-3" value="rankCandidateResults()" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#D9D9D9;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontStyle=1;fontSize=14;fontColor=#000000;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="524" y="330" width="215" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="child-2-4" value="formatCandidateResults()" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#D9D9D9;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontStyle=1;fontSize=14;fontColor=#000000;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="764" y="330" width="215" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="child-2-5" value="returnRecommendationList()" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#D9D9D9;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontStyle=1;fontSize=14;fontColor=#000000;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="884" y="500" width="215" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-2-1" value="CandidateFilter" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontStyle=1;fontSize=12;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="parent-2" target="child-2-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-2-2" value="CandidateFilter" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontStyle=1;fontSize=12;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="parent-2" target="child-2-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-2-3" value="CandidateScore" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontStyle=1;fontSize=12;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="parent-2" target="child-2-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-2-4" value="CandidateRankedList, CandidateResultsFormatter" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontStyle=1;fontSize=12;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="parent-2" target="child-2-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-2-5" value="RecommendationResults" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.5;fontFamily=Arial;fontStyle=1;fontSize=12;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="parent-2" target="child-2-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
