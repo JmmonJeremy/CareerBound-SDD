@@ -1,0 +1,128 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="BJ0-R1WylHCajg876sXv">
+    <mxGraphModel dx="691" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="UGzJbn7KeKjEEE_QkjwW-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="DFD Figure - Autocomplete API Adapter" vertex="1">
+          <mxGeometry height="30" width="240" x="270" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="UGzJbn7KeKjEEE_QkjwW-2" parent="1" style="whiteSpace=wrap;html=1;" value="User" vertex="1">
+          <mxGeometry height="60" width="120" x="60" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="UGzJbn7KeKjEEE_QkjwW-3" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="180" y="270" as="sourcePoint" />
+            <mxPoint x="340" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UGzJbn7KeKjEEE_QkjwW-4" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="340" y="290" as="sourcePoint" />
+            <mxPoint x="180" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UGzJbn7KeKjEEE_QkjwW-5" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="1.1.0" vertex="1">
+          <mxGeometry height="110" width="220" x="340" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="UGzJbn7KeKjEEE_QkjwW-6" parent="UGzJbn7KeKjEEE_QkjwW-5" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="validateAutocompleteInput()" vertex="1">
+          <mxGeometry height="60" width="220" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="UGzJbn7KeKjEEE_QkjwW-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="partialSearchText" vertex="1">
+          <mxGeometry height="30" width="60" x="220" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="UGzJbn7KeKjEEE_QkjwW-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="input valid /&lt;div&gt;error message&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="70" x="220" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="UGzJbn7KeKjEEE_QkjwW-10" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="440" y="350" as="sourcePoint" />
+            <mxPoint x="440" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UGzJbn7KeKjEEE_QkjwW-11" connectable="0" parent="UGzJbn7KeKjEEE_QkjwW-10" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" value="AutocompleteRequest" vertex="1">
+          <mxGeometry relative="1" x="0.0182" y="3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UGzJbn7KeKjEEE_QkjwW-12" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="1.2.0" vertex="1">
+          <mxGeometry height="110" width="220" x="340" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="UGzJbn7KeKjEEE_QkjwW-13" parent="UGzJbn7KeKjEEE_QkjwW-12" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="getAutocompleteSuggestions()" vertex="1">
+          <mxGeometry height="60" width="220" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="UGzJbn7KeKjEEE_QkjwW-14" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="440" y="570" as="sourcePoint" />
+            <mxPoint x="440" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UGzJbn7KeKjEEE_QkjwW-15" connectable="0" parent="UGzJbn7KeKjEEE_QkjwW-14" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" value="SuggestionResults" vertex="1">
+          <mxGeometry relative="1" x="0.0182" y="3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UGzJbn7KeKjEEE_QkjwW-16" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="340" y="530" as="sourcePoint" />
+            <mxPoint x="180" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UGzJbn7KeKjEEE_QkjwW-17" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="180" y="500" as="sourcePoint" />
+            <mxPoint x="340" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UGzJbn7KeKjEEE_QkjwW-18" parent="1" style="whiteSpace=wrap;html=1;" value="Autocomplete API&lt;div&gt;(External Service)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="60" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="UGzJbn7KeKjEEE_QkjwW-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="request" vertex="1">
+          <mxGeometry height="30" width="60" x="220" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="UGzJbn7KeKjEEE_QkjwW-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="SuggestionResults" vertex="1">
+          <mxGeometry height="30" width="60" x="220" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="UGzJbn7KeKjEEE_QkjwW-23" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="1.3.0" vertex="1">
+          <mxGeometry height="110" width="220" x="340" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="UGzJbn7KeKjEEE_QkjwW-24" parent="UGzJbn7KeKjEEE_QkjwW-23" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="formatSuggestions()" vertex="1">
+          <mxGeometry height="60" width="220" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="UGzJbn7KeKjEEE_QkjwW-25" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="340" y="740" as="sourcePoint" />
+            <mxPoint x="180" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UGzJbn7KeKjEEE_QkjwW-26" parent="1" style="whiteSpace=wrap;html=1;" value="User" vertex="1">
+          <mxGeometry height="60" width="120" x="60" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="UGzJbn7KeKjEEE_QkjwW-27" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="formattedSuggestions" vertex="1">
+          <mxGeometry height="30" width="60" x="230" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="UGzJbn7KeKjEEE_QkjwW-28" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="560" y="500" as="sourcePoint" />
+            <mxPoint x="720" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UGzJbn7KeKjEEE_QkjwW-29" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="720" y="530" as="sourcePoint" />
+            <mxPoint x="560" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UGzJbn7KeKjEEE_QkjwW-30" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="store / retrieve&lt;div&gt;suggestions, logs&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="100" x="590" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="UGzJbn7KeKjEEE_QkjwW-31" parent="1" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.dataStoreID;align=left;spacingLeft=3;points=[[0,0],[0.5,0],[1,0],[0,0.5],[1,0.5],[0,1],[0.5,1],[1,1]];" value="1" vertex="1">
+          <mxGeometry height="30" width="240" x="720" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="UGzJbn7KeKjEEE_QkjwW-33" connectable="0" parent="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" value="AutocompleteStorage" vertex="1">
+          <mxGeometry x="820" y="520" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
