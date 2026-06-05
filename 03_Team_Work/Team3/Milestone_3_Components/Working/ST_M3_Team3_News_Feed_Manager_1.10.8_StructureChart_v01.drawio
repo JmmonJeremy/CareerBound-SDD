@@ -1,0 +1,75 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="ST-1108-SC-v01">
+    <mxGraphModel dx="2054" dy="1202" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Titles -->
+        <mxCell id="title-main" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=11;fontStyle=1;" value="&lt;b&gt;Structure Charts — 1.10 Notification Subsystem&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="320" x="265" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="title-sub" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=11;" value="&lt;b&gt;SC Figure 1.10.8 — newsFeedManager()&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="310" x="270" y="150" as="geometry" />
+        </mxCell>
+
+        <!-- Parent module: newsFeedManager() -->
+        <mxCell id="mod-top" parent="1" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;" value="" vertex="1">
+          <mxGeometry height="60" width="230" x="310" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="mod-top-lbl" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="newsFeedManager()" vertex="1">
+          <mxGeometry height="40" width="220" x="315" y="250" as="geometry" />
+        </mxCell>
+
+        <!-- Child module: createFeedEntry() -->
+        <mxCell id="mod-create" parent="1" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;" value="" vertex="1">
+          <mxGeometry height="60" width="195" x="70" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="mod-create-lbl" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="createFeedEntry()" vertex="1">
+          <mxGeometry height="40" width="185" x="75" y="450" as="geometry" />
+        </mxCell>
+
+        <!-- Child module: retrieveFeedItems() -->
+        <mxCell id="mod-retrieve" parent="1" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;" value="" vertex="1">
+          <mxGeometry height="60" width="200" x="325" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="mod-retrieve-lbl" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="retrieveFeedItems()" vertex="1">
+          <mxGeometry height="40" width="190" x="330" y="450" as="geometry" />
+        </mxCell>
+
+        <!-- Child module: updateFeedStatus() -->
+        <mxCell id="mod-update" parent="1" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;" value="" vertex="1">
+          <mxGeometry height="60" width="195" x="585" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="mod-update-lbl" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="updateFeedStatus()" vertex="1">
+          <mxGeometry height="40" width="185" x="590" y="450" as="geometry" />
+        </mxCell>
+
+        <!-- Edge: mod-top → mod-create, data couple: feedEventData -->
+        <mxCell id="edge-top-create" edge="1" parent="1" source="mod-top" target="mod-create" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.05;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="couple-create" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=10;rotation=-35;" value="feedEventData" vertex="1">
+          <mxGeometry height="25" width="85" x="130" y="338" as="geometry" />
+        </mxCell>
+
+        <!-- Edge: mod-top → mod-retrieve, data couple: feedItems -->
+        <mxCell id="edge-top-retrieve" edge="1" parent="1" source="mod-top" target="mod-retrieve" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="couple-retrieve" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=10;" value="feedItems" vertex="1">
+          <mxGeometry height="25" width="80" x="388" y="375" as="geometry" />
+        </mxCell>
+
+        <!-- Edge: mod-top → mod-update, data couple: statusUpdate -->
+        <mxCell id="edge-top-update" edge="1" parent="1" source="mod-top" target="mod-update" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.95;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="couple-update" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=10;rotation=35;" value="statusUpdate" vertex="1">
+          <mxGeometry height="25" width="80" x="628" y="338" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
