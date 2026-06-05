@@ -1,0 +1,214 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="tdi8y5Zuyhflmv4h3xFe">
+    <mxGraphModel dx="1030" dy="562" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D9D9D9;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;receiveGatewayRequest()&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="180" x="80" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D9D9D9;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;parseIncomingRequest()&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="180" x="80" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D9D9D9;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;forwardToRequestRouter()&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="190" x="230" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D9D9D9;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;handleAuthenticationResult()&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="200" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D9D9D9;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;sendToClient()&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="160" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-8" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="159.5" y="120" as="sourcePoint" />
+            <mxPoint x="159.5" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-9" edge="1" parent="1" source="zyRBowSwxp-PrcQAWdDb-2" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="110" y="200" as="sourcePoint" />
+            <mxPoint x="110" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-10" edge="1" parent="1" source="zyRBowSwxp-PrcQAWdDb-2" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="zyRBowSwxp-PrcQAWdDb-3" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="219.5" y="200" as="sourcePoint" />
+            <mxPoint x="219.5" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-11" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="79" y="280" as="sourcePoint" />
+            <mxPoint x="79" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="gatewayRequestObj" vertex="1">
+          <mxGeometry height="30" width="60" x="190" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="RequestContext" vertex="1">
+          <mxGeometry height="30" width="60" x="60" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="RequestContext" vertex="1">
+          <mxGeometry height="30" width="60" x="280" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="GatewayResponse" vertex="1">
+          <mxGeometry height="30" width="60" x="110" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-17" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#D9D9D9;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;1.4.3&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="40" x="265" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-18" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="285" y="280" as="sourcePoint" />
+            <mxPoint x="285" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D9D9D9;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;receiveRouterRequest()&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="170" x="480" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D9D9D9;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;requestRoute()&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="160" x="480" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D9D9D9;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;applyRoutingRules()&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="160" x="480" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D9D9D9;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;forwardToOrchestrator()&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="170" x="640" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D9D9D9;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;handleRoutingErrors()&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="160" x="480" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-24" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D9D9D9;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;returnToGateway()&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="160" x="440" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-25" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="routerRequestObj" vertex="1">
+          <mxGeometry height="30" width="60" x="590" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-26" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="560" y="80" as="sourcePoint" />
+            <mxPoint x="560" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-27" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="559.5" y="160" as="sourcePoint" />
+            <mxPoint x="559.5" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-28" edge="1" parent="1" source="zyRBowSwxp-PrcQAWdDb-21" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="zyRBowSwxp-PrcQAWdDb-23" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="510" y="240" as="sourcePoint" />
+            <mxPoint x="510" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-29" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="zyRBowSwxp-PrcQAWdDb-22" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="320" />
+            </Array>
+            <mxPoint x="640" y="320" as="sourcePoint" />
+            <mxPoint x="620" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-30" edge="1" parent="1" source="zyRBowSwxp-PrcQAWdDb-23" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="510" y="320" as="sourcePoint" />
+            <mxPoint x="510" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-31" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="RoutingDecision" vertex="1">
+          <mxGeometry height="30" width="60" x="660" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-33" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="RoutingDecision" vertex="1">
+          <mxGeometry height="30" width="60" x="450" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-34" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="RouteDefinition" vertex="1">
+          <mxGeometry height="30" width="60" x="580" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-35" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="RouteDefinition" vertex="1">
+          <mxGeometry height="30" width="60" x="580" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-36" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#D9D9D9;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;1.4.1&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="40" x="505" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-37" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="524.5" y="400" as="sourcePoint" />
+            <mxPoint x="524.5" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-38" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D9D9D9;" value="&lt;font face=&quot;Arial&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;receiveAuthenticationRequest()&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="220" x="160" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-39" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D9D9D9;" value="&lt;font face=&quot;Arial&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;validateCredentials()&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="160" x="160" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-40" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D9D9D9;" value="&lt;font face=&quot;Arial&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;generateTokens()&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="160" x="280" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-41" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D9D9D9;" value="&lt;font style=&quot;font-size: 14px;&quot; face=&quot;Arial&quot;&gt;&lt;b&gt;handleFailedAuthentication()&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="200" x="40" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-42" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D9D9D9;" value="&lt;font face=&quot;Arial&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;returnAuthenticationResult()&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="200" x="160" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-43" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="240" y="520" as="sourcePoint" />
+            <mxPoint x="240" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-44" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="zyRBowSwxp-PrcQAWdDb-41" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="240" y="600" as="sourcePoint" />
+            <mxPoint x="240" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-45" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="zyRBowSwxp-PrcQAWdDb-40" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="239" y="600" as="sourcePoint" />
+            <mxPoint x="239" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-47" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="authenticationRequestObj" vertex="1">
+          <mxGeometry height="30" width="60" x="285" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-50" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="zyRBowSwxp-PrcQAWdDb-42" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="140" y="680" as="sourcePoint" />
+            <mxPoint x="240" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-51" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="zyRBowSwxp-PrcQAWdDb-42" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="360" y="680" as="sourcePoint" />
+            <mxPoint x="270" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-52" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="AuthenticationResult" vertex="1">
+          <mxGeometry height="30" width="60" x="330" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-54" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="AuthenticationResult" vertex="1">
+          <mxGeometry height="30" width="60" x="100" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-56" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="AuthenticationResult" vertex="1">
+          <mxGeometry height="30" width="60" x="340" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-57" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="AuthenticationResult" vertex="1">
+          <mxGeometry height="30" width="60" x="110" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-58" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="240" y="760" as="sourcePoint" />
+            <mxPoint x="240" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zyRBowSwxp-PrcQAWdDb-59" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#D9D9D9;" value="&lt;font style=&quot;font-size: 14px;&quot; face=&quot;Arial&quot;&gt;&lt;b&gt;1.4.1&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="40" x="220" y="800" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
