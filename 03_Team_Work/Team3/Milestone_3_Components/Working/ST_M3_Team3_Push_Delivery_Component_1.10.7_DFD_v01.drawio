@@ -1,0 +1,122 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="ST-1107-DFD-v01">
+    <mxGraphModel dx="900" dy="1100" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=13;fontStyle=1;" value="&lt;b&gt;DFD Figure 1.10.7 — Push Delivery Component&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="420" x="340" y="40" as="geometry" />
+        </mxCell>
+
+        <!-- External Entity: Notification Orchestrator -->
+        <mxCell id="ext-orch" parent="1" style="html=1;dashed=0;whiteSpace=wrap;" value="" vertex="1">
+          <mxGeometry height="65" width="155" x="20" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="ext-orch-lbl" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Notification Orchestrator" vertex="1">
+          <mxGeometry height="40" width="145" x="25" y="312" as="geometry" />
+        </mxCell>
+
+        <!-- External Entity: Push Service API -->
+        <mxCell id="ext-push" parent="1" style="html=1;dashed=0;whiteSpace=wrap;" value="" vertex="1">
+          <mxGeometry height="65" width="155" x="925" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="ext-push-lbl" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Push Service API (FCM / APNs / WebPush)" vertex="1">
+          <mxGeometry height="50" width="145" x="930" y="307" as="geometry" />
+        </mxCell>
+
+        <!-- Process: 1.0 pushDeliveryComponent() -->
+        <mxCell id="proc-main" parent="1" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.start" value="" vertex="1">
+          <mxGeometry height="70" width="200" x="450" y="288" as="geometry" />
+        </mxCell>
+        <mxCell id="proc-main-lbl" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1.0 pushDeliveryComponent()" vertex="1">
+          <mxGeometry height="40" width="190" x="455" y="303" as="geometry" />
+        </mxCell>
+
+        <!-- Process: 1.1 routeToService() -->
+        <mxCell id="proc-route" parent="1" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.start" value="" vertex="1">
+          <mxGeometry height="68" width="190" x="160" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="proc-route-lbl" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1.1 routeToService()" vertex="1">
+          <mxGeometry height="40" width="180" x="165" y="504" as="geometry" />
+        </mxCell>
+
+        <!-- Process: 1.2 deliverPushNotification() -->
+        <mxCell id="proc-deliver" parent="1" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.start" value="" vertex="1">
+          <mxGeometry height="68" width="200" x="450" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="proc-deliver-lbl" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1.2 deliverPushNotification()" vertex="1">
+          <mxGeometry height="40" width="190" x="455" y="504" as="geometry" />
+        </mxCell>
+
+        <!-- Process: 1.3 recordDeliveryStatus() -->
+        <mxCell id="proc-record" parent="1" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.start" value="" vertex="1">
+          <mxGeometry height="68" width="200" x="730" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="proc-record-lbl" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1.3 recordDeliveryStatus()" vertex="1">
+          <mxGeometry height="40" width="190" x="735" y="504" as="geometry" />
+        </mxCell>
+
+        <!-- Data Store: D1 Push Token Registry -->
+        <mxCell id="ds-tokens" parent="1" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.dataStoreID;align=left;spacingLeft=3;points=[[0,0],[0.5,0],[1,0],[0,0.5],[1,0.5],[0,1],[0.5,1],[1,1]];" value="" vertex="1">
+          <mxGeometry height="30" width="240" x="100" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="ds-tokens-lbl" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="D1 Push Token Registry" vertex="1">
+          <mxGeometry height="30" width="175" x="135" y="660" as="geometry" />
+        </mxCell>
+
+        <!-- Data Store: D2 Delivery Log -->
+        <mxCell id="ds-log" parent="1" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.dataStoreID;align=left;spacingLeft=3;points=[[0,0],[0.5,0],[1,0],[0,0.5],[1,0.5],[0,1],[0.5,1],[1,1]];" value="" vertex="1">
+          <mxGeometry height="30" width="210" x="690" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="ds-log-lbl" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="D2 Delivery Log" vertex="1">
+          <mxGeometry height="30" width="160" x="715" y="660" as="geometry" />
+        </mxCell>
+
+        <!-- Edges / Data Flows -->
+
+        <!-- Notification Orchestrator → 1.0: notificationPayload -->
+        <mxCell id="edge-1" edge="1" parent="1" source="ext-orch" target="proc-main" value="notificationPayload" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=10;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 1.0 → 1.1: routingRequest -->
+        <mxCell id="edge-2" edge="1" parent="1" source="proc-main" target="proc-route" value="routingRequest" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=1;exitDx=100;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=10;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- D1 → 1.1: deviceToken (read) -->
+        <mxCell id="edge-3" edge="1" parent="1" source="ds-tokens" target="proc-route" value="deviceToken" style="endArrow=classic;html=1;rounded=0;entryX=0.3;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=10;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 1.1 → 1.2: routedNotification -->
+        <mxCell id="edge-4" edge="1" parent="1" source="proc-route" target="proc-deliver" value="routedNotification" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=10;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 1.2 → Push Service API: pushRequest -->
+        <mxCell id="edge-5" edge="1" parent="1" source="proc-deliver" target="ext-push" value="pushRequest" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=10;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Push Service API → 1.2: deliveryConfirmation -->
+        <mxCell id="edge-6" edge="1" parent="1" source="ext-push" target="proc-deliver" value="deliveryConfirmation" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.7;exitDx=0;exitDy=0;entryX=1;entryY=0.7;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=10;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 1.2 → 1.3: deliveryResult -->
+        <mxCell id="edge-7" edge="1" parent="1" source="proc-deliver" target="proc-record" value="deliveryResult" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=10;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 1.3 → D2: deliveryStatus (write) -->
+        <mxCell id="edge-8" edge="1" parent="1" source="proc-record" target="ds-log" value="deliveryStatus" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=10;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
