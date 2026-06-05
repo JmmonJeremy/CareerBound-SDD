@@ -1,0 +1,61 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="K_gdnfr8n3HWlzV-KJ_G">
+    <mxGraphModel dx="629" dy="636" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="xzCdrdfRFVZ_J7DHI_XD-6" edge="1" parent="1" source="xzCdrdfRFVZ_J7DHI_XD-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xzCdrdfRFVZ_J7DHI_XD-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xzCdrdfRFVZ_J7DHI_XD-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="validateAddress()" vertex="1">
+          <mxGeometry height="60" width="180" x="90" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="xzCdrdfRFVZ_J7DHI_XD-16" edge="1" parent="1" source="xzCdrdfRFVZ_J7DHI_XD-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xzCdrdfRFVZ_J7DHI_XD-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xzCdrdfRFVZ_J7DHI_XD-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="standardizeAddress()" vertex="1">
+          <mxGeometry height="60" width="150" x="105" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="xzCdrdfRFVZ_J7DHI_XD-19" edge="1" parent="1" source="xzCdrdfRFVZ_J7DHI_XD-3" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xzCdrdfRFVZ_J7DHI_XD-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xzCdrdfRFVZ_J7DHI_XD-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="getAddress()" vertex="1">
+          <mxGeometry height="60" width="120" x="240" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="xzCdrdfRFVZ_J7DHI_XD-4" edge="1" parent="1" source="xzCdrdfRFVZ_J7DHI_XD-3" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xzCdrdfRFVZ_J7DHI_XD-1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="210" y="370" as="sourcePoint" />
+            <mxPoint x="260" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xzCdrdfRFVZ_J7DHI_XD-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;p class=&quot;MsoNormal&quot;&gt;&lt;b&gt;SC 1.12.1 - USPS Address Validation Adapter&lt;/b&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="370" x="115" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="xzCdrdfRFVZ_J7DHI_XD-17" edge="1" parent="1" source="xzCdrdfRFVZ_J7DHI_XD-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xzCdrdfRFVZ_J7DHI_XD-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xzCdrdfRFVZ_J7DHI_XD-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="validateCity()" vertex="1">
+          <mxGeometry height="60" width="105" x="127.5" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="xzCdrdfRFVZ_J7DHI_XD-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="validateZip()" vertex="1">
+          <mxGeometry height="60" width="105" x="127.5" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="xzCdrdfRFVZ_J7DHI_XD-22" edge="1" parent="1" source="xzCdrdfRFVZ_J7DHI_XD-18" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xzCdrdfRFVZ_J7DHI_XD-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xzCdrdfRFVZ_J7DHI_XD-23" edge="1" parent="1" source="xzCdrdfRFVZ_J7DHI_XD-18" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xzCdrdfRFVZ_J7DHI_XD-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xzCdrdfRFVZ_J7DHI_XD-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="manageCompanyAddress()" vertex="1">
+          <mxGeometry height="60" width="180" x="400" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="xzCdrdfRFVZ_J7DHI_XD-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="addLocation()" vertex="1">
+          <mxGeometry height="60" width="125" x="320" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="xzCdrdfRFVZ_J7DHI_XD-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="updateLocation()" vertex="1">
+          <mxGeometry height="60" width="130" x="520" y="410" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
