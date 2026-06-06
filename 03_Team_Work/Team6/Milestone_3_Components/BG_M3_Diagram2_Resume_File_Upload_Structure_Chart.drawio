@@ -1,0 +1,52 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Structure Chart 2 - Resume File Upload" id="0">
+    <mxGraphModel dx="1414" dy="787" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="a2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0ff;strokeColor=#3c506e;strokeWidth=2;fontStyle=1;" value="uploadResume()" vertex="1">
+          <mxGeometry height="70" width="280" x="560" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="b2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f7fa;strokeColor=#3c506e;strokeWidth=2;" value="validateResumeFile()" vertex="1">
+          <mxGeometry height="70" width="260" x="220" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_b2" edge="1" parent="1" source="a2" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" target="b2" value="ResumeFile + FileType + FileSize">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f7fa;strokeColor=#3c506e;strokeWidth=2;" value="saveResumeMetadata()" vertex="1">
+          <mxGeometry height="70" width="260" x="560" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_c2" edge="1" parent="1" source="a2" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" target="c2" value="ResumeMetadata">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f7fa;strokeColor=#3c506e;strokeWidth=2;" value="linkResumeToProfile()" vertex="1">
+          <mxGeometry height="70" width="260" x="900" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_d2" edge="1" parent="1" source="a2" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" target="d2" value="Resume + StudentProfile">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nn1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;strokeWidth=1;" value="ResumeFile&lt;br&gt;selected by student" vertex="1">
+          <mxGeometry height="90" width="240" x="90" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="nn2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;strokeWidth=1;" value="File / Blob Storage&lt;br&gt;actual file" vertex="1">
+          <mxGeometry height="90" width="240" x="380" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="nn3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;strokeWidth=1;" value="Database&lt;br&gt;metadata + links" vertex="1">
+          <mxGeometry height="90" width="240" x="670" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="nn4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;strokeWidth=1;" value="StudentProfile&lt;br&gt;resume available" vertex="1">
+          <mxGeometry height="90" width="240" x="960" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="support1" edge="1" parent="1" source="b2" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" target="nn2" value="valid file">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="support2" edge="1" parent="1" source="c2" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" target="nn3" value="file name / type / size / upload date">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="support3" edge="1" parent="1" source="d2" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" target="nn4" value="resume link">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
