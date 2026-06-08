@@ -1,0 +1,67 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="DFD - Resume Input and Builder" id="0">
+    <mxGraphModel dx="1768" dy="984" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="s" parent="1" style="whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;" value="Student User" vertex="1">
+          <mxGeometry height="60" width="180" x="40" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="w" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f7f9fc;strokeColor=#2d4b82;strokeWidth=2;" value="1.0 Web Client&lt;br&gt;Resume Form" vertex="1">
+          <mxGeometry height="70" width="220" x="300" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="api" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f7f9fc;strokeColor=#2d4b82;strokeWidth=2;" value="2.0 API Gateway /&lt;br&gt;Orchestrator" vertex="1">
+          <mxGeometry height="70" width="240" x="590" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="rb" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f7f9fc;strokeColor=#2d4b82;strokeWidth=2;" value="3.0 Resume Builder" vertex="1">
+          <mxGeometry height="70" width="220" x="900" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="rv" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f7f9fc;strokeColor=#2d4b82;strokeWidth=2;" value="4.0 Resume Validator" vertex="1">
+          <mxGeometry height="70" width="220" x="900" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="db" parent="1" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=1;right=0;top=1;bottom=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;" value="D1 Database&lt;br&gt;resume data + links" vertex="1">
+          <mxGeometry height="80" width="250" x="590" y="665" as="geometry" />
+        </mxCell>
+        <mxCell id="sp" parent="1" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=1;right=0;top=1;bottom=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;" value="D2 Student Profile" vertex="1">
+          <mxGeometry height="80" width="220" x="300" y="665" as="geometry" />
+        </mxCell>
+        <mxCell id="bs" parent="1" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=1;right=0;top=1;bottom=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;" value="D3 File / Blob Storage" vertex="1">
+          <mxGeometry height="80" width="240" x="1110" y="665" as="geometry" />
+        </mxCell>
+        <mxCell id="co" parent="1" style="whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;" value="Company Representative" vertex="1">
+          <mxGeometry height="60" width="200" x="40" y="675" as="geometry" />
+        </mxCell>
+        <mxCell id="f1" edge="1" parent="1" source="s" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" target="w" value="contact / education / experience / skills">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f2" edge="1" parent="1" source="w" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" target="api" value="resume input request">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f3" edge="1" parent="1" source="api" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" target="rb" value="ResumeInput">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f4" edge="1" parent="1" source="rb" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" target="rv" value="resume data to validate">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f5" edge="1" parent="1" source="rv" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" target="db" value="validated resume data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f6" edge="1" parent="1" source="rv" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" target="sp" value="resume link">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f7" edge="1" parent="1" source="sp" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" target="co" value="view resume link">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f8" edge="1" parent="1" source="rv" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" target="bs" value="optional uploaded ResumeFile">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f9" edge="1" parent="1" source="rv" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" target="s" value="missing fields message">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#cccccc;" value="Legend:&lt;br&gt;Rectangle = External Entity&lt;br&gt;Rounded box = Process&lt;br&gt;Open-side box = Data Store&lt;br&gt;Arrow = Data Flow" vertex="1">
+          <mxGeometry height="120" width="320" x="1030" y="840" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
