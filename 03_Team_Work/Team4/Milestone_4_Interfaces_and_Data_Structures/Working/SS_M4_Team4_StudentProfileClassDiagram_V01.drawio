@@ -1,0 +1,68 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="vtpbQWFZLEXcu90V4Vz2">
+    <mxGraphModel dx="737" dy="993" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="400" pageHeight="400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FSdOKo9Y46WwGn7tQ_Qw-14" edge="1" parent="1" source="YoFwaZTcaV3K8VZ1DTB9-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontFamily=Courier New;strokeWidth=2;endSize=34;" target="YoFwaZTcaV3K8VZ1DTB9-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-60" y="-430" as="sourcePoint" />
+            <mxPoint x="120" y="-550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FSdOKo9Y46WwGn7tQ_Qw-9" edge="1" parent="1" source="YoFwaZTcaV3K8VZ1DTB9-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamondThin;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontFamily=Courier New;startSize=40;endSize=12;strokeWidth=2;" target="YoFwaZTcaV3K8VZ1DTB9-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-110" y="-631" as="sourcePoint" />
+            <mxPoint y="-727" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FSdOKo9Y46WwGn7tQ_Qw-19" edge="1" parent="1" source="YoFwaZTcaV3K8VZ1DTB9-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontFamily=Courier New;strokeWidth=2;endSize=34;" target="YoFwaZTcaV3K8VZ1DTB9-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="-430" as="sourcePoint" />
+            <mxPoint x="120" y="-550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoFwaZTcaV3K8VZ1DTB9-2" parent="1" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;fontFamily=Courier New;align=left;fillColor=#D9D9D9;" value="" vertex="1">
+          <mxGeometry height="30" width="160" x="200" y="-430" as="geometry" />
+        </mxCell>
+        <mxCell id="YoFwaZTcaV3K8VZ1DTB9-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;fontFamily=Courier New;" value="&lt;span style=&quot;font-weight: 700;&quot;&gt;&amp;nbsp;CompanyProfile&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="160" x="200" y="-430" as="geometry" />
+        </mxCell>
+        <mxCell id="YoFwaZTcaV3K8VZ1DTB9-4" parent="1" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;fontFamily=Courier New;align=left;fillColor=#D9D9D9;" value="" vertex="1">
+          <mxGeometry height="30" width="160" x="-230" y="-590" as="geometry" />
+        </mxCell>
+        <mxCell id="YoFwaZTcaV3K8VZ1DTB9-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;fontFamily=Courier New;" value="&lt;span style=&quot;font-weight: 700;&quot;&gt;&amp;nbsp;ProfileManager&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="160" x="-230" y="-590" as="geometry" />
+        </mxCell>
+        <mxCell id="YoFwaZTcaV3K8VZ1DTB9-6" parent="1" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedHeader=1;align=left;verticalAlign=top;fontFamily=Courier New;fillColor=#D9D9D9;" value=" StudentProfile" vertex="1">
+          <mxGeometry height="590" width="490" x="-330" y="-430" as="geometry" />
+        </mxCell>
+        <mxCell id="YoFwaZTcaV3K8VZ1DTB9-7" parent="YoFwaZTcaV3K8VZ1DTB9-6" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;align=left;verticalAlign=top;fontFamily=Courier New;" value="" vertex="1">
+          <mxGeometry height="170" width="490" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoFwaZTcaV3K8VZ1DTB9-8" parent="YoFwaZTcaV3K8VZ1DTB9-7" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=#F2F2F2;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;verticalAlign=top;fontFamily=Courier New;" value="&lt;div style=&quot;&quot;&gt;&lt;div&gt;/ phoneNunber : String&lt;div&gt;/ email : String&lt;/div&gt;&lt;div&gt;/ socials : List&amp;lt;String&amp;gt;&lt;/div&gt;&lt;div&gt;/ profileImageRef : String&lt;/div&gt;&lt;/div&gt;&lt;div&gt;- firstName : String&lt;/div&gt;&lt;div&gt;- lastName : String&lt;/div&gt;&lt;/div&gt;&lt;span style=&quot;&quot;&gt;- accolades : List&amp;lt;String&amp;gt;&lt;/span&gt;&lt;div style=&quot;&quot;&gt;- resumeRef : String&lt;/div&gt;&lt;div style=&quot;&quot;&gt;- portfolioRef : String&lt;/div&gt;&lt;div style=&quot;&quot;&gt;- GPA : Float&lt;/div&gt;&lt;div style=&quot;&quot;&gt;- skills : List&amp;lt;String&amp;gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="490" as="geometry">
+            <mxRectangle height="170" width="490" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoFwaZTcaV3K8VZ1DTB9-9" parent="YoFwaZTcaV3K8VZ1DTB9-6" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;align=left;verticalAlign=top;fontFamily=Courier New;" value="" vertex="1">
+          <mxGeometry height="390" width="490" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="YoFwaZTcaV3K8VZ1DTB9-10" parent="YoFwaZTcaV3K8VZ1DTB9-9" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=#F2F2F2;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;verticalAlign=top;fontFamily=Courier New;" value="&lt;div&gt;/ getEmail() : String&lt;div&gt;/ setEmail(email : String) : Void&lt;/div&gt;&lt;div&gt;/ getPhoneNumber() : String&lt;/div&gt;&lt;div&gt;/ setPhoneNumber(number : String) : Void&lt;/div&gt;&lt;div&gt;/ addSocial(social : String) : Void&lt;/div&gt;&lt;div&gt;/ removeSocial(social : String) : Void&lt;/div&gt;&lt;div&gt;/ editSocial(social : String : Void)&lt;/div&gt;&lt;div&gt;/ retrieveSocials() : List&amp;lt;String&amp;gt;&lt;/div&gt;&lt;/div&gt;&lt;span style=&quot;&quot;&gt;+ addAccolades(accoladeData): void&lt;/span&gt;&lt;div style=&quot;&quot;&gt;+ updateAccolade(accoladeData : string, accoladeId : Int) : Void&lt;/div&gt;&lt;div style=&quot;&quot;&gt;+ deleteAccolade(accoladeId : Int)&lt;/div&gt;&lt;div style=&quot;&quot;&gt;+ setResumeReference(reference : String) : Void&lt;/div&gt;&lt;div style=&quot;&quot;&gt;+ getResumeReference() : String&lt;/div&gt;&lt;div style=&quot;&quot;&gt;+ updateResume()&lt;/div&gt;&lt;div style=&quot;&quot;&gt;+ setPortfolioReference(reference : String) : Void&lt;/div&gt;&lt;div style=&quot;&quot;&gt;+ getPortfolioReference() : String&lt;/div&gt;&lt;div style=&quot;&quot;&gt;+ setGPA(gpa : Float) : Void&lt;/div&gt;&lt;div style=&quot;&quot;&gt;+ getGPA() : Float&lt;/div&gt;&lt;div style=&quot;&quot;&gt;+ addSkill(skillData): void&lt;div&gt;+ updateSkill(skillData : string, skillId : Int) : Void&lt;/div&gt;&lt;div&gt;+ deleteSkill(skillId: Int)&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;+ retrieveFullName() : String&lt;/div&gt;&lt;div&gt;+ getFirstName() : String&lt;/div&gt;&lt;div&gt;+ setFirstName(name : String) : Void&lt;/div&gt;&lt;div&gt;+ getLastName() : String&lt;/div&gt;&lt;div&gt;+ setLastName(name : String) : Void&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="390" width="490" as="geometry">
+            <mxRectangle height="390" width="490" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoFwaZTcaV3K8VZ1DTB9-12" parent="1" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;fontFamily=Courier New;align=left;fillColor=#D9D9D9;" value="" vertex="1">
+          <mxGeometry height="30" width="160" x="40" y="-615" as="geometry" />
+        </mxCell>
+        <mxCell id="YoFwaZTcaV3K8VZ1DTB9-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;fontFamily=Courier New;" value="&lt;span style=&quot;font-weight: 700;&quot;&gt;&amp;nbsp;Profile&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="160" x="40" y="-615" as="geometry" />
+        </mxCell>
+        <mxCell id="YoFwaZTcaV3K8VZ1DTB9-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Courier New;" value="1..*" vertex="1">
+          <mxGeometry height="30" width="20" x="-60" y="-600" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
