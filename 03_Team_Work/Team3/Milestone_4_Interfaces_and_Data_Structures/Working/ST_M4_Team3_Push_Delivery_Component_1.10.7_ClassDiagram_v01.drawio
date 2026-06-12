@@ -1,0 +1,117 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="ST-1107-CD-v01">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=13;fontStyle=1;" value="&lt;b&gt;1.10.7-CD PushDeliveryComponent Class Diagram&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="460" x="320" y="20" as="geometry" />
+        </mxCell>
+
+        <!-- ===================== PRIMARY CLASS ===================== -->
+        <mxCell id="pc" value=" PushDeliveryComponent" style="swimlane;fontStyle=1;align=left;spacingLeft=6;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#D9D9D9;swimlaneFillColor=#F2F2F2;strokeColor=#000000;fontFamily=Courier New;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="380" y="290" width="360" height="204" as="geometry" />
+        </mxCell>
+        <mxCell id="pc-a1" value="- tokenRegistry : PushTokenRegistry" style="text;strokeColor=none;fillColor=#F2F2F2;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Courier New;fontSize=12;fontStyle=1;" vertex="1" parent="pc">
+          <mxGeometry y="28" width="360" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="pc-a2" value="- deliveryLog : DeliveryLog" style="text;strokeColor=none;fillColor=#F2F2F2;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Courier New;fontSize=12;fontStyle=1;" vertex="1" parent="pc">
+          <mxGeometry y="52" width="360" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="pc-a3" value="- pushServiceClient : PushServiceClient" style="text;strokeColor=none;fillColor=#F2F2F2;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Courier New;fontSize=12;fontStyle=1;" vertex="1" parent="pc">
+          <mxGeometry y="76" width="360" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="pc-sep" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="pc">
+          <mxGeometry y="100" width="360" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="pc-m1" value="+ pushDeliveryComponent ( payload : NotificationPayload ) : DeliveryResult" style="text;strokeColor=none;fillColor=#F2F2F2;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Courier New;fontSize=12;fontStyle=1;" vertex="1" parent="pc">
+          <mxGeometry y="108" width="360" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="pc-m2" value="- routeToService ( request : RoutingRequest ) : RoutedNotification" style="text;strokeColor=none;fillColor=#F2F2F2;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Courier New;fontSize=12;fontStyle=1;" vertex="1" parent="pc">
+          <mxGeometry y="132" width="360" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="pc-m3" value="- deliverPushNotification ( notification : RoutedNotification ) : DeliveryResult" style="text;strokeColor=none;fillColor=#F2F2F2;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Courier New;fontSize=12;fontStyle=1;" vertex="1" parent="pc">
+          <mxGeometry y="156" width="360" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="pc-m4" value="- recordDeliveryStatus ( result : DeliveryResult ) : void" style="text;strokeColor=none;fillColor=#F2F2F2;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Courier New;fontSize=12;fontStyle=1;" vertex="1" parent="pc">
+          <mxGeometry y="180" width="360" height="24" as="geometry" />
+        </mxCell>
+
+        <!-- ===================== SUPPORTING CLASSES (no title, 1 box) ===================== -->
+        <!-- Composition members (owned data stores) -->
+        <mxCell id="sc-tokenreg" value=" PushTokenRegistry" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#000000;fontFamily=Courier New;fontSize=12;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="540" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sc-log" value=" DeliveryLog" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#000000;fontFamily=Courier New;fontSize=12;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="340" y="620" width="200" height="40" as="geometry" />
+        </mxCell>
+        <!-- Aggregation member (external service client) -->
+        <mxCell id="sc-pushclient" value=" PushServiceClient" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#000000;fontFamily=Courier New;fontSize=12;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="820" y="540" width="200" height="40" as="geometry" />
+        </mxCell>
+        <!-- Association data classes -->
+        <mxCell id="sc-payload" value=" NotificationPayload" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#000000;fontFamily=Courier New;fontSize=12;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="120" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sc-routed" value=" RoutedNotification" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#000000;fontFamily=Courier New;fontSize=12;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="460" y="620" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sc-result" value=" DeliveryResult" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#000000;fontFamily=Courier New;fontSize=12;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="820" y="120" width="200" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- ===================== RELATIONSHIPS ===================== -->
+        <!-- Composition: PushDeliveryComponent  composes  PushTokenRegistry -->
+        <mxCell id="e-comp-token" edge="1" parent="1" source="pc" target="sc-tokenreg" value="" style="startArrow=diamondThin;startFill=1;startSize=20;endArrow=none;html=1;rounded=0;strokeWidth=2;edgeStyle=none;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n-comp-token" value="1" style="text;html=1;strokeColor=none;fillColor=none;fontFamily=Courier New;fontSize=12;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="270" y="520" width="30" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Composition: PushDeliveryComponent  composes  DeliveryLog -->
+        <mxCell id="e-comp-log" edge="1" parent="1" source="pc" target="sc-log" value="" style="startArrow=diamondThin;startFill=1;startSize=20;endArrow=none;html=1;rounded=0;strokeWidth=2;edgeStyle=none;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n-comp-log" value="1" style="text;html=1;strokeColor=none;fillColor=none;fontFamily=Courier New;fontSize=12;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="450" y="595" width="30" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Aggregation: PushDeliveryComponent  composes  PushServiceClient -->
+        <mxCell id="e-agg-client" edge="1" parent="1" source="pc" target="sc-pushclient" value="" style="startArrow=diamondThin;startFill=0;startSize=20;endArrow=none;html=1;rounded=0;strokeWidth=2;edgeStyle=none;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n-agg-client" value="1" style="text;html=1;strokeColor=none;fillColor=none;fontFamily=Courier New;fontSize=12;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="800" y="520" width="30" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Association: PushDeliveryComponent to NotificationPayload -->
+        <mxCell id="e-assoc-payload" edge="1" parent="1" source="pc" target="sc-payload" value="" style="startArrow=none;endArrow=open;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=2;edgeStyle=none;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n-assoc-payload" value="1" style="text;html=1;strokeColor=none;fillColor=none;fontFamily=Courier New;fontSize=12;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="305" y="170" width="30" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Association: PushDeliveryComponent to RoutedNotification -->
+        <mxCell id="e-assoc-routed" edge="1" parent="1" source="pc" target="sc-routed" value="" style="startArrow=none;endArrow=open;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=2;edgeStyle=none;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n-assoc-routed" value="1" style="text;html=1;strokeColor=none;fillColor=none;fontFamily=Courier New;fontSize=12;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="565" y="595" width="30" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Association: PushDeliveryComponent to DeliveryResult -->
+        <mxCell id="e-assoc-result" edge="1" parent="1" source="pc" target="sc-result" value="" style="startArrow=none;endArrow=open;endFill=0;endSize=12;html=1;rounded=0;strokeWidth=2;edgeStyle=none;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n-assoc-result" value="1" style="text;html=1;strokeColor=none;fillColor=none;fontFamily=Courier New;fontSize=12;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="785" y="170" width="30" height="20" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
