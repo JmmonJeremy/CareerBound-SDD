@@ -1,0 +1,137 @@
+<mxfile host="app.diagrams.net" pages="2">
+  <diagram name="Page-1" id="UuumeinpL0txHKxXWgX2">
+    <mxGraphModel dx="607" dy="898" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="light-dark(transparent,#FFFFFF)" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zt1JkroSgjdQOUa7wNkI-1" edge="1" parent="1" source="xGdKaPCLKPKG7NXWsgdK-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeColor=light-dark(#000000,#000000);endArrow=open;endFill=0;endSize=20;dashed=1;dashPattern=8 8;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="509" y="263" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xGdKaPCLKPKG7NXWsgdK-44" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#B3B3B3);strokeColor=light-dark(#000000,#000000);fontColor=light-dark(#000000,#000000);" value="USPSAddressValidator" vertex="1">
+          <mxGeometry height="122" width="243" x="388" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="xGdKaPCLKPKG7NXWsgdK-45" parent="xGdKaPCLKPKG7NXWsgdK-44" style="text;strokeColor=light-dark(#000000,#000000);fillColor=light-dark(transparent,#CCCCCC);align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&amp;nbsp;" vertex="1">
+          <mxGeometry height="26" width="243" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="xGdKaPCLKPKG7NXWsgdK-47" parent="xGdKaPCLKPKG7NXWsgdK-44" style="text;strokeColor=light-dark(#000000,#000000);fillColor=light-dark(transparent,#CCCCCC);align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontColor=light-dark(#000000,#000000);" value="&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ validateAddress() : Bool&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ validateCity() : Bool&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ validateZip() : Bool&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ standardizeAddress() : ValidatedAddress&lt;/p&gt;" vertex="1">
+          <mxGeometry height="70" width="243" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="39Z8m3UwilxaKDnmKwfl-1" edge="1" parent="1" source="3kIj1BDTJ5qVyHRubgI3-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=light-dark(#000000,#000000);endArrow=open;endFill=0;dashed=1;dashPattern=8 8;endSize=20;" target="xGdKaPCLKPKG7NXWsgdK-44">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="346" y="143" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3kIj1BDTJ5qVyHRubgI3-1" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#B3B3B3);strokeColor=light-dark(#000000,#000000);fontColor=light-dark(#000000,#000000);" value="&lt;b&gt;AddressRequest&lt;/b&gt;" vertex="1">
+          <mxGeometry height="148" width="190" x="75" y="69" as="geometry" />
+        </mxCell>
+        <mxCell id="3kIj1BDTJ5qVyHRubgI3-2" parent="3kIj1BDTJ5qVyHRubgI3-1" style="text;strokeColor=light-dark(#000000,#000000);fillColor=light-dark(transparent,#CCCCCC);align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontColor=light-dark(#000000,#000000);" value="&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;- streetAddress : String&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;- suiteNumber : String&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;- state : String&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;- zipCode : String&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;- country : String&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;- city : String&lt;/p&gt;" vertex="1">
+          <mxGeometry height="94" width="190" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="3kIj1BDTJ5qVyHRubgI3-4" parent="3kIj1BDTJ5qVyHRubgI3-1" style="text;strokeColor=light-dark(#000000,#000000);fillColor=light-dark(transparent,#CCCCCC);align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontColor=light-dark(#000000,#000000);" value="&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ getAddress() : String&lt;/p&gt;" vertex="1">
+          <mxGeometry height="28" width="190" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="3kIj1BDTJ5qVyHRubgI3-6" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#B3B3B3);strokeColor=light-dark(#000000,#000000);fontColor=light-dark(#000000,#000000);" value="&lt;b&gt;ValidatedAddress&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="168" width="190" x="419" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="3kIj1BDTJ5qVyHRubgI3-7" parent="3kIj1BDTJ5qVyHRubgI3-6" style="text;strokeColor=light-dark(#000000,#000000);fillColor=light-dark(transparent,#CCCCCC);align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontColor=light-dark(#000000,#000000);" value="&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;- streetAddress : String&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;- suiteNumber : String&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;- state : String&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;- zipCode : String&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;- country : String&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;- city : String&lt;br&gt;- validatedStatus : Bool&lt;/p&gt;" vertex="1">
+          <mxGeometry height="114" width="190" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="3kIj1BDTJ5qVyHRubgI3-9" parent="3kIj1BDTJ5qVyHRubgI3-6" style="text;strokeColor=light-dark(#000000,#000000);fillColor=light-dark(transparent,#CCCCCC);align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontColor=light-dark(#000000,#000000);" value="&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ getValidatedAddress() : String&lt;/p&gt;" vertex="1">
+          <mxGeometry height="28" width="190" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="zt1JkroSgjdQOUa7wNkI-2" edge="1" parent="1" source="3kIj1BDTJ5qVyHRubgI3-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=light-dark(#000000,#000000);endArrow=none;endFill=0;endSize=20;startArrow=diamond;startFill=0;startSize=20;" target="3kIj1BDTJ5qVyHRubgI3-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3kIj1BDTJ5qVyHRubgI3-10" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#B3B3B3);strokeColor=light-dark(#000000,#000000);fontColor=light-dark(#000000,#000000);" value="&lt;div&gt;&lt;b style=&quot;color: rgb(255, 255, 255);&quot;&gt;CompanyLocationData&lt;/b&gt;&lt;b&gt;&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="121" width="190" x="419" y="502" as="geometry" />
+        </mxCell>
+        <mxCell id="3kIj1BDTJ5qVyHRubgI3-11" parent="3kIj1BDTJ5qVyHRubgI3-10" style="text;strokeColor=light-dark(#000000,#000000);fillColor=light-dark(transparent,#CCCCCC);align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontColor=light-dark(#000000,#000000);" value="&lt;p style=&quot;color: rgb(255, 255, 255); margin: 0px 0px 0px 4px;&quot;&gt;- companyId : Int&lt;/p&gt;&lt;p style=&quot;color: rgb(255, 255, 255); margin: 0px 0px 0px 4px;&quot;&gt;- locationId : Int&lt;/p&gt;&lt;p style=&quot;color: rgb(255, 255, 255); margin: 0px 0px 0px 4px;&quot;&gt;- address : String&lt;/p&gt;" vertex="1">
+          <mxGeometry height="55" width="190" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="3kIj1BDTJ5qVyHRubgI3-12" parent="3kIj1BDTJ5qVyHRubgI3-10" style="text;strokeColor=light-dark(#000000,#000000);fillColor=light-dark(transparent,#CCCCCC);align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontColor=light-dark(#000000,#000000);" value="&lt;p style=&quot;color: rgb(255, 255, 255); margin: 0px 0px 0px 4px;&quot;&gt;+ addLocation() : Void&lt;/p&gt;&lt;p style=&quot;color: rgb(255, 255, 255); margin: 0px 0px 0px 4px;&quot;&gt;+ updateLocation() : Void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="40" width="190" y="81" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Page-2" id="qSRy7de6-YUCuhXqaxv4">
+    <mxGraphModel dx="1413" dy="899" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="light-dark(#FFFFFF,#FFFFFF)" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="jlBvO5plgG6Cfl2moV-D-1" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#B3B3B3);strokeColor=light-dark(#000000,#000000);fontColor=light-dark(#000000,#000000);" value="&lt;b style=&quot;color: rgb(255, 255, 255);&quot;&gt;CompanyRepresentative&lt;/b&gt;&lt;div&gt;&lt;b style=&quot;color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="190" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jlBvO5plgG6Cfl2moV-D-2" parent="jlBvO5plgG6Cfl2moV-D-1" style="text;strokeColor=light-dark(#000000,#000000);fillColor=light-dark(transparent,#CCCCCC);align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontColor=light-dark(#000000,#000000);" value="&lt;p style=&quot;color: rgb(255, 255, 255); margin: 0px 0px 0px 4px;&quot;&gt;- companyId : Int&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;color: rgb(255, 255, 255); margin: 0px 0px 0px 4px;&quot;&gt;- companyName : String&lt;/p&gt;" vertex="1">
+          <mxGeometry height="44" width="190" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="jlBvO5plgG6Cfl2moV-D-3" parent="jlBvO5plgG6Cfl2moV-D-1" style="text;strokeColor=light-dark(#000000,#000000);fillColor=light-dark(transparent,#CCCCCC);align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontColor=light-dark(#000000,#000000);" value="&lt;p style=&quot;color: rgb(255, 255, 255); margin: 0px 0px 0px 4px;&quot;&gt;+ followStudent() : Void&lt;/p&gt;&lt;p style=&quot;color: rgb(255, 255, 255); margin: 0px 0px 0px 4px;&quot;&gt;+ viewStudentProfile() : Void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="40" width="190" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hubkxtLiATmRUNKnCLH1-2" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="jlBvO5plgG6Cfl2moV-D-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="415" y="280" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jlBvO5plgG6Cfl2moV-D-5" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#B3B3B3);strokeColor=light-dark(#000000,#000000);fontColor=light-dark(#000000,#000000);" value="&lt;div&gt;&lt;b style=&quot;color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;StudentProfile&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="190" x="320" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jlBvO5plgG6Cfl2moV-D-6" parent="jlBvO5plgG6Cfl2moV-D-5" style="text;strokeColor=light-dark(#000000,#000000);fillColor=light-dark(transparent,#CCCCCC);align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontColor=light-dark(#000000,#000000);" value="&lt;p style=&quot;color: rgb(255, 255, 255); margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;- studentId : Int&lt;/span&gt;&lt;/p&gt;&lt;div style=&quot;color: rgb(255, 255, 255);&quot;&gt;- name : String&lt;/div&gt;&lt;div style=&quot;color: rgb(255, 255, 255);&quot;&gt;- email : String&lt;/div&gt;&lt;div style=&quot;color: rgb(255, 255, 255);&quot;&gt;- gpa : Double&lt;/div&gt;&lt;div style=&quot;color: rgb(255, 255, 255);&quot;&gt;- skills : List&amp;lt;String&amp;gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(255, 255, 255);&quot;&gt;- portfolio : String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="94" width="190" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="jlBvO5plgG6Cfl2moV-D-7" parent="jlBvO5plgG6Cfl2moV-D-5" style="text;strokeColor=light-dark(#000000,#000000);fillColor=light-dark(transparent,#CCCCCC);align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontColor=light-dark(#000000,#000000);" value="&lt;p style=&quot;color: rgb(255, 255, 255); margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;+ viewProfile() : Void&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="190" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="jlBvO5plgG6Cfl2moV-D-11" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#B3B3B3);strokeColor=light-dark(#000000,#000000);fontColor=light-dark(#000000,#000000);" value="&lt;div&gt;&lt;b style=&quot;color: rgb(255, 255, 255);&quot;&gt;&lt;b style=&quot;color: rgb(255, 255, 255);&quot;&gt;Resume&lt;/b&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;color: rgb(255, 255, 255);&quot;&gt;&lt;b style=&quot;color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/b&gt;&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="190" x="320" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="jlBvO5plgG6Cfl2moV-D-12" parent="jlBvO5plgG6Cfl2moV-D-11" style="text;strokeColor=light-dark(#000000,#000000);fillColor=light-dark(transparent,#CCCCCC);align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontColor=light-dark(#000000,#000000);" value="&lt;p style=&quot;color: rgb(255, 255, 255); margin: 0px 0px 0px 4px;&quot;&gt;- resumeId : Int&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;color: rgb(255, 255, 255); margin: 0px 0px 0px 4px;&quot;&gt;- education : String&lt;/p&gt;&lt;p style=&quot;color: rgb(255, 255, 255); margin: 0px 0px 0px 4px;&quot;&gt;- experience : String&lt;/p&gt;&lt;p style=&quot;color: rgb(255, 255, 255); margin: 0px 0px 0px 4px;&quot;&gt;- skills : List&amp;lt;String&amp;gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="74" width="190" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="jlBvO5plgG6Cfl2moV-D-13" parent="jlBvO5plgG6Cfl2moV-D-11" style="text;strokeColor=light-dark(#000000,#000000);fillColor=light-dark(transparent,#CCCCCC);align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontColor=light-dark(#000000,#000000);" value="&lt;p style=&quot;color: rgb(255, 255, 255); margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;+ submitResume() : Void&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="190" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="jlBvO5plgG6Cfl2moV-D-14" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#B3B3B3);strokeColor=light-dark(#000000,#000000);fontColor=light-dark(#000000,#000000);" value="&lt;div&gt;&lt;b style=&quot;color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;ResumeRepository&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="190" x="320" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="jlBvO5plgG6Cfl2moV-D-15" parent="jlBvO5plgG6Cfl2moV-D-14" style="text;strokeColor=light-dark(#000000,#000000);fillColor=light-dark(transparent,#CCCCCC);align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontColor=light-dark(#000000,#000000);" value="&lt;p style=&quot;color: rgb(255, 255, 255); margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;- resumes :&amp;nbsp; List&amp;lt;Resume&amp;gt;&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="24" width="190" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="jlBvO5plgG6Cfl2moV-D-16" parent="jlBvO5plgG6Cfl2moV-D-14" style="text;strokeColor=light-dark(#000000,#000000);fillColor=light-dark(transparent,#CCCCCC);align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontColor=light-dark(#000000,#000000);" value="&lt;p style=&quot;color: rgb(255, 255, 255); margin: 0px 0px 0px 4px;&quot;&gt;+ storeResume() : Void&lt;/p&gt;&lt;p style=&quot;color: rgb(255, 255, 255); margin: 0px 0px 0px 4px;&quot;&gt;+ retrieveResume() : Resume&lt;/p&gt;&lt;p style=&quot;color: rgb(255, 255, 255); margin: 0px 0px 0px 4px;&quot;&gt;+ searchResume() : Resume[ ]&lt;/p&gt;" vertex="1">
+          <mxGeometry height="60" width="190" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="hubkxtLiATmRUNKnCLH1-8" edge="1" parent="1" source="jlBvO5plgG6Cfl2moV-D-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;dashPattern=8 8;endArrow=open;endFill=0;endSize=20;strokeColor=light-dark(#000000,#000000);" target="jlBvO5plgG6Cfl2moV-D-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jlBvO5plgG6Cfl2moV-D-17" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#B3B3B3);strokeColor=light-dark(#000000,#000000);fontColor=light-dark(#000000,#000000);" value="&lt;div&gt;&lt;b style=&quot;color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;ResumeMatcher&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="190" x="320" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="jlBvO5plgG6Cfl2moV-D-18" parent="jlBvO5plgG6Cfl2moV-D-17" style="text;strokeColor=light-dark(#000000,#000000);fillColor=light-dark(transparent,#CCCCCC);align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontColor=light-dark(#000000,#000000);" value="&lt;p style=&quot;color: rgb(255, 255, 255); margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;- requiredSkills : List&amp;lt;String&amp;gt;&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="24" width="190" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="jlBvO5plgG6Cfl2moV-D-19" parent="jlBvO5plgG6Cfl2moV-D-17" style="text;strokeColor=light-dark(#000000,#000000);fillColor=light-dark(transparent,#CCCCCC);align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontColor=light-dark(#000000,#000000);" value="&lt;p style=&quot;color: rgb(255, 255, 255); margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;+ matchResume() : Bool&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="190" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="hubkxtLiATmRUNKnCLH1-1" edge="1" parent="1" source="jlBvO5plgG6Cfl2moV-D-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.309;entryDx=0;entryDy=0;entryPerimeter=0;endSize=20;endArrow=blockThin;endFill=1;strokeColor=light-dark(#000000,#000000);" target="jlBvO5plgG6Cfl2moV-D-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hubkxtLiATmRUNKnCLH1-4" edge="1" parent="1" source="jlBvO5plgG6Cfl2moV-D-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=diamond;endFill=1;strokeColor=light-dark(#000000,#000000);endSize=20;" target="jlBvO5plgG6Cfl2moV-D-11" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="415" y="190" as="sourcePoint" />
+            <mxPoint x="415" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hubkxtLiATmRUNKnCLH1-7" edge="1" parent="1" source="jlBvO5plgG6Cfl2moV-D-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=none;endFill=0;fillColor=light-dark(transparent,#000000);strokeColor=light-dark(#000000,#000000);startArrow=diamond;startFill=0;startSize=20;" target="jlBvO5plgG6Cfl2moV-D-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="415" y="440" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RV2hmH6I4-orVRBVC0RB-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000,#000000);fontSize=17;" value="1" vertex="1">
+          <mxGeometry height="30" width="30" x="410" y="190" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

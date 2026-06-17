@@ -1,0 +1,103 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="2Ov15PyWD1FIB7A-y52i">
+    <mxGraphModel grid="0" page="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lP1wH4VD5iuWU1TAzRUa-3" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;aspect=fixed;fillColor=none;strokeColor=none;resizable=0;perimeter=centerPerimeter;rotatable=0;allowArrows=0;points=[];outlineConnect=1;" value="" vertex="1">
+          <mxGeometry height="10" width="10" x="246" y="-468" as="geometry" />
+        </mxCell>
+        <mxCell id="lP1wH4VD5iuWU1TAzRUa-4" parent="1" style="whiteSpace=wrap;html=1;" value="getAutocompleteSuggestions()" vertex="1">
+          <mxGeometry height="60" width="181" x="161" y="-698" as="geometry" />
+        </mxCell>
+        <mxCell id="lP1wH4VD5iuWU1TAzRUa-5" edge="1" parent="1" source="lP1wH4VD5iuWU1TAzRUa-4" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="206" y="-558" as="sourcePoint" />
+            <mxPoint x="251" y="-588" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lP1wH4VD5iuWU1TAzRUa-6" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-19" y="-588" as="sourcePoint" />
+            <mxPoint x="801" y="-588" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lP1wH4VD5iuWU1TAzRUa-7" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" value="AutocompleteRequest">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <mxPoint x="-19" y="-588" as="sourcePoint" />
+            <mxPoint x="-19" y="-488" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lP1wH4VD5iuWU1TAzRUa-8" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" value="partialSearchText">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <mxPoint x="151" y="-588" as="sourcePoint" />
+            <mxPoint x="151" y="-488" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lP1wH4VD5iuWU1TAzRUa-9" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" value="chachedSuggestions">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <mxPoint x="331" y="-588" as="sourcePoint" />
+            <mxPoint x="331" y="-488" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lP1wH4VD5iuWU1TAzRUa-10" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" value="SuggestionResults">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <mxPoint x="541" y="-588" as="sourcePoint" />
+            <mxPoint x="541" y="-488" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lP1wH4VD5iuWU1TAzRUa-11" parent="1" style="whiteSpace=wrap;html=1;" value="validateAutocompleteInput()" vertex="1">
+          <mxGeometry height="60" width="160" x="-99" y="-488" as="geometry" />
+        </mxCell>
+        <mxCell id="lP1wH4VD5iuWU1TAzRUa-12" parent="1" style="whiteSpace=wrap;html=1;" value="AutocompleteCache&lt;div&gt;(Data Store)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="160" x="96" y="-488" as="geometry" />
+        </mxCell>
+        <mxCell id="lP1wH4VD5iuWU1TAzRUa-13" parent="1" style="whiteSpace=wrap;html=1;" value="AutocompleteAPI&lt;div&gt;(ExternalAPI)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="160" x="271" y="-488" as="geometry" />
+        </mxCell>
+        <mxCell id="lP1wH4VD5iuWU1TAzRUa-14" parent="1" style="whiteSpace=wrap;html=1;" value="SuggestionFormatter&lt;div&gt;(module)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="160" x="451" y="-488" as="geometry" />
+        </mxCell>
+        <mxCell id="lP1wH4VD5iuWU1TAzRUa-15" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" value="AutocompleteRequest">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <mxPoint x="-19.5" y="-438" as="sourcePoint" />
+            <mxPoint x="-19.5" y="-338" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lP1wH4VD5iuWU1TAzRUa-16" parent="1" style="whiteSpace=wrap;html=1;" value="AutocompleteRequest&lt;div&gt;(object)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="160" x="-99" y="-338" as="geometry" />
+        </mxCell>
+        <mxCell id="lP1wH4VD5iuWU1TAzRUa-17" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" value="partialSearchText">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <mxPoint x="-19.5" y="-278" as="sourcePoint" />
+            <mxPoint x="-19.5" y="-178" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lP1wH4VD5iuWU1TAzRUa-18" parent="1" style="whiteSpace=wrap;html=1;" value="partialSearchText&lt;div&gt;(variable)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="160" x="-99" y="-178" as="geometry" />
+        </mxCell>
+        <mxCell id="lP1wH4VD5iuWU1TAzRUa-19" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" value="SuggestionResults">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <mxPoint x="541" y="-428" as="sourcePoint" />
+            <mxPoint x="541" y="-328" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lP1wH4VD5iuWU1TAzRUa-20" parent="1" style="whiteSpace=wrap;html=1;" value="SuggestionResults&lt;div&gt;(object)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="160" x="461" y="-328" as="geometry" />
+        </mxCell>
+        <mxCell id="lP1wH4VD5iuWU1TAzRUa-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="SC-Autocomplete API Adapter" vertex="1">
+          <mxGeometry height="30" width="170" x="156" y="-788" as="geometry" />
+        </mxCell>
+        <mxCell id="lP1wH4VD5iuWU1TAzRUa-22" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" value="logRecords">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <mxPoint x="799" y="-588" as="sourcePoint" />
+            <mxPoint x="799" y="-488" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lP1wH4VD5iuWU1TAzRUa-23" parent="1" style="whiteSpace=wrap;html=1;" value="AutocompleteLogs&lt;div&gt;(Data Table)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="160" x="717" y="-488" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,129 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="ST-1108-DFD-v01">
+    <mxGraphModel dx="900" dy="1100" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=13;fontStyle=1;" value="&lt;b&gt;DFD Figure 1.10.8 — News Feed Manager&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="380" x="360" y="40" as="geometry" />
+        </mxCell>
+
+        <!-- External Entity: Notification Orchestrator -->
+        <mxCell id="ext-orch" parent="1" style="html=1;dashed=0;whiteSpace=wrap;" value="" vertex="1">
+          <mxGeometry height="65" width="155" x="20" y="195" as="geometry" />
+        </mxCell>
+        <mxCell id="ext-orch-lbl" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Notification Orchestrator" vertex="1">
+          <mxGeometry height="40" width="145" x="25" y="202" as="geometry" />
+        </mxCell>
+
+        <!-- External Entity: User App -->
+        <mxCell id="ext-user" parent="1" style="html=1;dashed=0;whiteSpace=wrap;" value="" vertex="1">
+          <mxGeometry height="65" width="140" x="27" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="ext-user-lbl" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="User App" vertex="1">
+          <mxGeometry height="30" width="130" x="32" y="455" as="geometry" />
+        </mxCell>
+
+        <!-- Process: 1.0 newsFeedManager() -->
+        <mxCell id="proc-main" parent="1" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.start" value="" vertex="1">
+          <mxGeometry height="70" width="200" x="450" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="proc-main-lbl" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1.0 newsFeedManager()" vertex="1">
+          <mxGeometry height="40" width="190" x="455" y="280" as="geometry" />
+        </mxCell>
+
+        <!-- Process: 1.1 createFeedEntry() -->
+        <mxCell id="proc-create" parent="1" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.start" value="" vertex="1">
+          <mxGeometry height="68" width="190" x="230" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="proc-create-lbl" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1.1 createFeedEntry()" vertex="1">
+          <mxGeometry height="40" width="180" x="235" y="494" as="geometry" />
+        </mxCell>
+
+        <!-- Process: 1.2 retrieveFeedItems() -->
+        <mxCell id="proc-retrieve" parent="1" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.start" value="" vertex="1">
+          <mxGeometry height="68" width="195" x="450" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="proc-retrieve-lbl" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1.2 retrieveFeedItems()" vertex="1">
+          <mxGeometry height="40" width="185" x="455" y="494" as="geometry" />
+        </mxCell>
+
+        <!-- Process: 1.3 updateFeedStatus() -->
+        <mxCell id="proc-update" parent="1" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.start" value="" vertex="1">
+          <mxGeometry height="68" width="195" x="730" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="proc-update-lbl" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1.3 updateFeedStatus()" vertex="1">
+          <mxGeometry height="40" width="185" x="735" y="494" as="geometry" />
+        </mxCell>
+
+        <!-- Data Store: D1 Feed Item Repository -->
+        <mxCell id="ds-feed" parent="1" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.dataStoreID;align=left;spacingLeft=3;points=[[0,0],[0.5,0],[1,0],[0,0.5],[1,0.5],[0,1],[0.5,1],[1,1]];" value="" vertex="1">
+          <mxGeometry height="30" width="260" x="420" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="ds-feed-lbl" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="D1 Feed Item Repository" vertex="1">
+          <mxGeometry height="30" width="195" x="452" y="650" as="geometry" />
+        </mxCell>
+
+        <!-- Edges / Data Flows -->
+
+        <!-- Notification Orchestrator → 1.0: feedEvent -->
+        <mxCell id="edge-1" edge="1" parent="1" source="ext-orch" target="proc-main" value="feedEvent" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.35;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=10;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- User App → 1.0: feedRequest -->
+        <mxCell id="edge-2" edge="1" parent="1" source="ext-user" target="proc-main" value="feedRequest" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.35;exitDx=0;exitDy=0;entryX=0;entryY=0.65;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=10;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- User App → 1.0: statusUpdate -->
+        <mxCell id="edge-2b" edge="1" parent="1" source="ext-user" target="proc-main" value="statusUpdate" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.65;exitDx=0;exitDy=0;entryX=0;entryY=0.82;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=10;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 1.0 → 1.1: feedEventData -->
+        <mxCell id="edge-3" edge="1" parent="1" source="proc-main" target="proc-create" value="feedEventData" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=1;exitDx=90;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=10;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 1.1 → D1: newFeedEntry (write) -->
+        <mxCell id="edge-4" edge="1" parent="1" source="proc-create" target="ds-feed" value="newFeedEntry" style="endArrow=classic;html=1;rounded=0;exitX=0.7;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=10;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 1.0 → 1.2: userFeedRequest -->
+        <mxCell id="edge-5" edge="1" parent="1" source="proc-main" target="proc-retrieve" value="userFeedRequest" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=10;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- D1 → 1.2: feedItems (read) -->
+        <mxCell id="edge-6" edge="1" parent="1" source="ds-feed" target="proc-retrieve" value="feedItems" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=10;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 1.2 → User App: feedItemList -->
+        <mxCell id="edge-7" edge="1" parent="1" source="proc-retrieve" target="ext-user" value="feedItemList" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.35;entryDx=0;entryDy=0;fontSize=10;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 1.0 → 1.3: statusUpdateRequest -->
+        <mxCell id="edge-8" edge="1" parent="1" source="proc-main" target="proc-update" value="statusUpdateRequest" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=10;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 1.3 → D1: updatedStatus (write) -->
+        <mxCell id="edge-9" edge="1" parent="1" source="proc-update" target="ds-feed" value="updatedStatus" style="endArrow=classic;html=1;rounded=0;exitX=0.3;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=10;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- D1 → 1.3: currentStatus (read) -->
+        <mxCell id="edge-10" edge="1" parent="1" source="ds-feed" target="proc-update" value="currentStatus" style="endArrow=classic;html=1;rounded=0;exitX=0.9;exitY=0;exitDx=0;exitDy=0;entryX=0.7;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=10;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
