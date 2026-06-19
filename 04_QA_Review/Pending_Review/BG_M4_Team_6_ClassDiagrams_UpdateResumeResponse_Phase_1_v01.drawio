@@ -1,0 +1,77 @@
+<mxfile host="app.diagrams.net" agent="ChatGPT" compressed="false">
+  <diagram id="f991153846884bc5bd98a74ecd9940b9" name="1.7.3-CD UpdateResumeResponse Class Diagram">
+    <mxGraphModel dx="1414" dy="759" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="primary_title" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D9D9D9;strokeColor=#000000;fontFamily=Courier New;fontSize=12;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=8;" value=" UpdateResumeResponse" vertex="1">
+          <mxGeometry height="42" width="335" x="325" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="primary_attrs" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#000000;fontFamily=Courier New;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=8;" value="+ success : Boolean&lt;br&gt;+ message : String&lt;br&gt;+ resumeStatus : String&lt;br&gt;+ updatedResume : Resume [0..1]&lt;br&gt;+ errors : ResumeError [0..*]" vertex="1">
+          <mxGeometry height="132" width="335" x="325" y="137" as="geometry" />
+        </mxCell>
+        <mxCell id="primary_methods" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#000000;fontFamily=Courier New;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=8;" value="+ saveResume() : void&lt;br&gt;+ checkResume() : Boolean&lt;br&gt;+ checkContactInfo() : Boolean&lt;br&gt;+ checkExperience() : Boolean&lt;br&gt;+ checkDegreeInfo() : Boolean" vertex="1">
+          <mxGeometry height="132" width="335" x="325" y="269" as="geometry" />
+        </mxCell>
+        <mxCell id="primary_anchor" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;" vertex="1">
+          <mxGeometry height="306" width="335" x="325" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="s0" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D9D9D9;strokeColor=#000000;fontFamily=Courier New;fontSize=12;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=8;" value=" Resume" vertex="1">
+          <mxGeometry height="54" width="195" x="720" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="s1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D9D9D9;strokeColor=#000000;fontFamily=Courier New;fontSize=12;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=8;" value=" ResumeError" vertex="1">
+          <mxGeometry height="54" width="195" x="395" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="s2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D9D9D9;strokeColor=#000000;fontFamily=Courier New;fontSize=12;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=8;" value=" Contact_Info" vertex="1">
+          <mxGeometry height="54" width="195" x="80" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="s3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D9D9D9;strokeColor=#000000;fontFamily=Courier New;fontSize=12;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=8;" value=" Experience" vertex="1">
+          <mxGeometry height="54" width="195" x="395" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="s4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D9D9D9;strokeColor=#000000;fontFamily=Courier New;fontSize=12;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=8;" value=" Degree_Info" vertex="1">
+          <mxGeometry height="54" width="195" x="710" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" edge="1" parent="1" source="primary_anchor" style="endArrow=open;endFill=0;html=1;rounded=0;strokeWidth=2;edgeStyle=orthogonalEdgeStyle;" target="s0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="el0" connectable="0" parent="e0" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Courier New;fontSize=11;fontStyle=1;" value="1 to 0..1" vertex="1">
+          <mxGeometry relative="1" y="-12" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="primary_anchor" style="startArrow=diamond;startFill=1;endArrow=none;html=1;rounded=0;strokeWidth=2;edgeStyle=orthogonalEdgeStyle;" target="s1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="el1" connectable="0" parent="e1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Courier New;fontSize=11;fontStyle=1;" value="1 to 0..*" vertex="1">
+          <mxGeometry relative="1" y="-12" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="s1" style="endArrow=open;endFill=0;html=1;rounded=0;strokeWidth=2;edgeStyle=orthogonalEdgeStyle;" target="s2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="el2" connectable="0" parent="e2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Courier New;fontSize=11;fontStyle=1;" value="0..* to 0..1" vertex="1">
+          <mxGeometry relative="1" y="-12" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="s1" style="endArrow=open;endFill=0;html=1;rounded=0;strokeWidth=2;edgeStyle=orthogonalEdgeStyle;" target="s3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="el3" connectable="0" parent="e3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Courier New;fontSize=11;fontStyle=1;" value="0..* to 0..1" vertex="1">
+          <mxGeometry relative="1" y="-12" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="s1" style="endArrow=open;endFill=0;html=1;rounded=0;strokeWidth=2;edgeStyle=orthogonalEdgeStyle;" target="s4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="el4" connectable="0" parent="e4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Courier New;fontSize=11;fontStyle=1;" value="0..* to 0..1" vertex="1">
+          <mxGeometry relative="1" y="-12" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
