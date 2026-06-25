@@ -1,0 +1,123 @@
+<mxfile host="Electron" pages="2">
+  <diagram id="job-posting-diag" name="JobPosting Class Diagram">
+    <mxGraphModel dx="681" dy="846" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D9D9D9;strokeColor=#000000;fontFamily=Courier New;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;" value=" JobPosting" vertex="1">
+          <mxGeometry height="30" width="220" x="60" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#000000;fontFamily=Courier New;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;" value=" - currentPost&#xa; - isDraft&#xa; - authorId" vertex="1">
+          <mxGeometry height="80" width="220" x="60" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#000000;fontFamily=Courier New;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;" value=" + createPost()&#xa; + updatePostDetails()&#xa; + archivePost()" vertex="1">
+          <mxGeometry height="80" width="220" x="60" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#000000;fontFamily=Courier New;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;" value=" PostValidator&#xa; + validateRequiredFields()&#xa; + verifyExpirationDate()&#xa; + checkProfanity()" vertex="1">
+          <mxGeometry height="105" width="210" x="360" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#000000;fontFamily=Courier New;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;" value=" ValidationResult&#xa; - isValid&#xa; - errorMessage" vertex="1">
+          <mxGeometry height="70" width="210" x="360" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#000000;fontFamily=Courier New;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;" value=" JobPostingsTable" vertex="1">
+          <mxGeometry height="42" width="210" x="360" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="8" edge="1" parent="1" style="edgeStyle=none;endArrow=none;endFill=0;startArrow=diamondThin;startFill=0;startSize=20;strokeWidth=2;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="130" as="sourcePoint" />
+            <mxPoint x="360" y="102" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9" edge="1" parent="1" style="edgeStyle=none;endArrow=open;endFill=0;endSize=10;strokeWidth=2;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="465" y="155" as="sourcePoint" />
+            <mxPoint x="465" y="185" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10" edge="1" parent="1" style="edgeStyle=none;endArrow=open;endFill=0;endSize=10;strokeWidth=2;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="230" as="sourcePoint" />
+            <mxPoint x="360" y="316" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontFamily=Courier New;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;" value="1" vertex="1">
+          <mxGeometry height="20" width="20" x="284" y="92.5" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontFamily=Courier New;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;" value="1" vertex="1">
+          <mxGeometry height="20" width="20" x="469" y="157" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontFamily=Courier New;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;" value="1" vertex="1">
+          <mxGeometry height="20" width="20" x="284" y="208" as="geometry" />
+        </mxCell>
+        <mxCell id="16" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontFamily=Courier New;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;" value="*" vertex="1">
+          <mxGeometry height="20" width="20" x="336" y="296" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="pmc-diag" name="PostManagementController Class Diagram">
+    <mxGraphModel dx="681" dy="846" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D9D9D9;strokeColor=#000000;fontFamily=Courier New;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;" value=" PostManagementController" vertex="1">
+          <mxGeometry height="30" width="265" x="40" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#000000;fontFamily=Courier New;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;" value="" vertex="1">
+          <mxGeometry height="30" width="265" x="40" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#000000;fontFamily=Courier New;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;" value=" + createPost()&#xa; + updatePostDetails()&#xa; + archivePost()" vertex="1">
+          <mxGeometry height="80" width="265" x="40" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#000000;fontFamily=Courier New;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;" value=" JobPosting&#xa; - isDraft  - authorId&#xa; + createPost()&#xa; + archivePost()" vertex="1">
+          <mxGeometry height="70" width="210" x="385" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#000000;fontFamily=Courier New;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;" value=" AuthorizationService&#xa; + verifyOwner()&#xa; + canCreateJob()&#xa; + canEditJob()" vertex="1">
+          <mxGeometry height="75" width="210" x="385" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#000000;fontFamily=Courier New;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;" value=" PostValidator&#xa; + validateRequiredFields()&#xa; + verifyExpirationDate()&#xa; + checkProfanity()" vertex="1">
+          <mxGeometry height="75" width="210" x="385" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#000000;fontFamily=Courier New;fontSize=12;fontStyle=1;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;" value=" JobPostingsTable" vertex="1">
+          <mxGeometry height="42" width="210" x="385" y="315" as="geometry" />
+        </mxCell>
+        <mxCell id="9" edge="1" parent="1" style="edgeStyle=none;endArrow=open;endFill=0;endSize=10;strokeWidth=2;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="305" y="97" as="sourcePoint" />
+            <mxPoint x="385" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10" edge="1" parent="1" style="edgeStyle=none;endArrow=none;endFill=0;startArrow=diamondThin;startFill=0;startSize=20;strokeWidth=2;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="305" y="132" as="sourcePoint" />
+            <mxPoint x="385" y="167" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11" edge="1" parent="1" style="edgeStyle=none;endArrow=none;endFill=0;startArrow=diamondThin;startFill=0;startSize=20;strokeWidth=2;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="305" y="167" as="sourcePoint" />
+            <mxPoint x="385" y="257" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="12" edge="1" parent="1" style="edgeStyle=none;endArrow=open;endFill=0;endSize=10;strokeWidth=2;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="305" y="202" as="sourcePoint" />
+            <mxPoint x="385" y="336" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontFamily=Courier New;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;" value="1" vertex="1">
+          <mxGeometry height="20" width="20" x="360" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontFamily=Courier New;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;" value="1" vertex="1">
+          <mxGeometry height="20" width="20" x="309" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="17" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontFamily=Courier New;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;" value="1" vertex="1">
+          <mxGeometry height="20" width="20" x="309" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="19" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontFamily=Courier New;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;" value="1" vertex="1">
+          <mxGeometry height="20" width="20" x="350" y="316" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
