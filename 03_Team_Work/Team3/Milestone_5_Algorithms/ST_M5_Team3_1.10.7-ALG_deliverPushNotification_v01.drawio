@@ -1,0 +1,19 @@
+<mxfile host="Electron" type="device">
+  <diagram name="deliverPushNotification" id="deliverPushNotification">
+    <mxGraphModel dx="800" dy="600" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#3399FF;strokeWidth=4;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="620" height="600" as="geometry"/>
+        </mxCell>
+        <mxCell id="tab" value="Pseudocode" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#3399FF;strokeColor=none;fontColor=#FFFFFF;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="200" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="code" value="deliverPushNotification(notification)&#10;&#10;    GET notification&#10;&#10;    recipientId &lt;- notification.recipientId&#10;    deviceToken &lt;- tokenRegistry.lookupToken(recipientId)&#10;&#10;    IF deviceToken is empty&#10;        result.status &lt;- &quot;FAILED&quot;&#10;        result.reason &lt;- &quot;No registered device token&quot;&#10;        WRITE result TO deliveryLog&#10;        RETURN result&#10;&#10;    message  &lt;- notification.payload&#10;    attempts &lt;- 0&#10;    delivered &lt;- false&#10;&#10;    WHILE attempts &lt; MAX_ATTEMPTS AND delivered is false&#10;        response &lt;- pushServiceClient.send(deviceToken, message)&#10;        attempts &lt;- attempts + 1&#10;&#10;        IF response.accepted is true&#10;            delivered &lt;- true&#10;        ELSE&#10;            WAIT briefly before next retry&#10;&#10;    IF delivered is true&#10;        result.status &lt;- &quot;DELIVERED&quot;&#10;    ELSE&#10;        result.status &lt;- &quot;FAILED&quot;&#10;        result.reason &lt;- response.errorMessage&#10;&#10;    result.attempts &lt;- attempts&#10;    WRITE result TO deliveryLog&#10;    RETURN result" style="text;html=1;whiteSpace=pre;align=left;verticalAlign=top;fontFamily=Courier New;fontSize=12;spacingLeft=8;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="52" y="68" width="600" height="560" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,19 @@
+<mxfile host="Electron" type="device">
+  <diagram name="routeToService" id="routeToService">
+    <mxGraphModel dx="800" dy="600" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="container" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#3399FF;strokeWidth=4;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="620" height="536" as="geometry"/>
+        </mxCell>
+        <mxCell id="tab" value="Pseudocode" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#3399FF;strokeColor=none;fontColor=#FFFFFF;fontSize=14;fontFamily=Arial;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="200" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="code" value="routeToService(request)&#10;&#10;    GET request&#10;&#10;    IF request is empty OR request.payload is empty&#10;        routed.status &lt;- &quot;INVALID&quot;&#10;        RETURN routed&#10;&#10;    channel &lt;- request.preferredChannel&#10;&#10;    IF channel is not provided&#10;        IF NotificationsAvailable(request.recipientId) is true&#10;            channel &lt;- &quot;PUSH&quot;&#10;        ELSE&#10;            channel &lt;- &quot;IN_APP&quot;&#10;&#10;    SWITCH channel&#10;        CASE &quot;PUSH&quot;&#10;            serviceTarget &lt;- pushServiceClient&#10;        CASE &quot;IN_APP&quot;&#10;            serviceTarget &lt;- inAppServiceClient&#10;        DEFAULT&#10;            serviceTarget &lt;- defaultServiceClient&#10;&#10;    routed.recipientId   &lt;- request.recipientId&#10;    routed.payload       &lt;- request.payload&#10;    routed.channel       &lt;- channel&#10;    routed.serviceTarget &lt;- serviceTarget&#10;    routed.status        &lt;- &quot;ROUTED&quot;&#10;&#10;    RETURN routed" style="text;html=1;whiteSpace=pre;align=left;verticalAlign=top;fontFamily=Courier New;fontSize=12;spacingLeft=8;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="52" y="68" width="600" height="496" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
